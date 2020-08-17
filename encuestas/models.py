@@ -5,11 +5,11 @@ from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator, MaxValueValidator
 # Create your models here.
 
-register = template.Library()
+from django.contrib.auth.models import AbstractUser
 
-class UserProfile(models.Model):
+class UserProfile(AbstractUser):
     #user = models.ForeignKey(User, unique=True, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, unique=True, on_delete=models.CASCADE)
+    #user = models.ForeignKey(User, unique=True, on_delete=models.CASCADE)
     avatar = models.ImageField(upload_to="encuestas/avatars")
     background = models.ImageField(upload_to="encuestas/avatars_bg")
 

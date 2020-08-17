@@ -14,16 +14,16 @@ from encuestas.forms import UserProfileForm, MyUserForm
 
 @login_required(login_url="/login/")
 def index(request):
-    up = UserProfile.objects.get(user = request.user)
-    return render(request, "index.html", {"userprofile":up})
+    #up = UserProfile.objects.get(user = request.user)
+    return render(request, "index.html")
 
 @login_required(login_url="/login/")
 def pages(request):
-    up = UserProfile.objects.get(user=request.user)
-    form = UserProfileForm(request.POST, instance=up)
-    form2 = MyUserForm(request.POST, instance=up.user)
+    #up = UserProfile.objects.get(user=request.user)
+    #form = UserProfileForm(request.POST, instance=up)
+    #form2 = MyUserForm(request.POST, instance=up.user)
     context = {}
-    context = {"userprofile": up, 'form': form, 'fomr2': form2}
+    #context = {"userprofile": up, 'form': form, 'fomr2': form2}
     # All resource paths end in .html.
     # Pick out the html file name from the url. And load that template.
     try:
