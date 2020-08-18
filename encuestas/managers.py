@@ -16,7 +16,7 @@ class UserProfileManager(BaseUserManager):
         extra_fields.setdefault('is_active', True)
 
         if extra_fields.get('is_staff') is not True:
-            raise ValueError(_('Super usermust have is_staff true'))
+            raise ValueError(_('Super user must have is_staff true'))
 
         if extra_fields.get('is_superuser') is not True:
             raise ValueError(_('Super user must have is_superuser true'))
