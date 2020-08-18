@@ -4,7 +4,8 @@ from .models import Choice
 from .models import Persona
 from .models import Curso
 from .models import Calificacion
-
+from django.contrib.auth.admin import UserAdmin
+from .forms import UserProfileCreationForm, UserProfileChangeForm
 
 # Register your models here.
 '''
@@ -13,9 +14,39 @@ class QuestionAdmin(admin.ModelAdmin):
     '''
 
 
-class ChoiceInline(admin.StackedInline):
-    model = Choice
-    extra = 3
+
+@admin.register(UserProfile)
+class UserProfileAdmin(UserAdmin):
+    add_form = UserProfileCreationForm
+    form = UserProfileChangeForm
+    model = UserProfile
+    list_display = ('username', 'is_staff', 'is_active')
+    list_filter =  ('username', 'is_staff', 'is_active')
+
+    fieldsets = (
+        (None, {'fields':('username','password')}),
+        ('Personal_Data', {'fields': ('email', 'first_name', 'last_name')}),
+        ('Permissions', {'fields':('groups','is_staff', 'is_active','is_superuser')}),
+        ('Images', {'fields':('avatar','background')}),
+        #('Dates', {'fields': ('last_login', 'date_joined')}),
+
+        #('Permissions', {'fields': ('is_staff', 'is_active')})
+    )
+    # add_fieldsets = (
+    #     (None,{
+    #         'classes':('wide',),
+    #         'fields':('username','password1','password2','is_staff','is_active')
+    #     })
+    # )
+    search_fields = ('username',)
+    ordering = ('username',)
+
+
+
+#@admin.register()
+#class ChoiceInline(admin.StackedInline):
+#    model = Choice
+#    extra = 3
 
 
 class QuestionAdmin(admin.ModelAdmin):
@@ -23,7 +54,7 @@ class QuestionAdmin(admin.ModelAdmin):
         (None, {'fields': ['question_text']}),
         ('Date information', {'fields': ['pub_date'], 'classes': ['collapse']}),
     ]
-    inlines = [ChoiceInline]
+    #inlines = [ChoiceInline]
     list_display = ('question_text', 'pub_date')
     list_filter = ['question_text', 'pub_date']
     search_fields = ['question_text', 'pub_date']
@@ -32,10 +63,6 @@ class QuestionAdmin(admin.ModelAdmin):
 class PersonaAdmin(admin.ModelAdmin):
     pass
 
-
-@admin.register(UserProfile)
-class UserProfileAdmin(admin.ModelAdmin):
-    pass
 
 @admin.register(Curso)
 class CursoAdmin(admin.ModelAdmin):

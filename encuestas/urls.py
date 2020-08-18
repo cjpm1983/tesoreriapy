@@ -1,10 +1,13 @@
 #from django.contrib import admin
 from django.urls import path
+from django.contrib.auth import views as auth_views
 from . import views
 
 app_name = 'encuestas'
 
 urlpatterns = [
+    path('change-password/',auth_views.PasswordChangeView.as_view(template_name = 'changepassword.html')),
+    #path('change-password/',auth_views.PasswordChangeView.as_view(template_name = 'changepassword.html'),name='change-password'),
     path('', views.IndexView.as_view(), name='index'),
     path('<int:pk>/', views.DetailView.as_view(), name='detail'),
     path('<int:pk>/results/', views.ResultsView.as_view(), name='results'),

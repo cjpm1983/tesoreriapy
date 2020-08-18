@@ -3,6 +3,10 @@ from django import template
 
 from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator, MaxValueValidator
+
+from .managers import UserProfileManager
+
+
 # Create your models here.
 
 from django.contrib.auth.models import AbstractUser
@@ -10,10 +14,13 @@ from django.contrib.auth.models import AbstractUser
 class UserProfile(AbstractUser):
     #user = models.ForeignKey(User, unique=True, on_delete=models.CASCADE)
     #user = models.ForeignKey(User, unique=True, on_delete=models.CASCADE)
-    avatar = models.ImageField(upload_to="encuestas/avatars")
-    background = models.ImageField(upload_to="encuestas/avatars_bg")
+    avatar = models.ImageField(upload_to="encuestas/avatars", null=True, blank=True, default='static/assets/img/theme/team-1-800x800.jpg')
+    background = models.ImageField(upload_to="encuestas/avatars_bg", null=True, blank=True, default='static/assets/img/theme/profile-cover.jpg')
 
+    #objects = UserProfileManager
 
+    def __str__(self):
+        return self.username
 
 
 class Question(models.Model):
