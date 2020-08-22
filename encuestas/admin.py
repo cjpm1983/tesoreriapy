@@ -6,6 +6,9 @@ from .models import Curso
 from .models import Calificacion
 from django.contrib.auth.admin import UserAdmin
 from .forms import UserProfileCreationForm, UserProfileChangeForm
+from django.utils.html import format_html
+
+admin.site.site_header = "Mi primer proyecto Django"
 
 # Register your models here.
 '''
@@ -14,23 +17,22 @@ class QuestionAdmin(admin.ModelAdmin):
     '''
 
 
-
 @admin.register(UserProfile)
 class UserProfileAdmin(UserAdmin):
     add_form = UserProfileCreationForm
     form = UserProfileChangeForm
     model = UserProfile
     list_display = ('username', 'is_staff', 'is_active')
-    list_filter =  ('username', 'is_staff', 'is_active')
+    list_filter = ('username', 'is_staff', 'is_active')
 
     fieldsets = (
-        (None, {'fields':('username','password')}),
+        (None, {'fields': ('username', 'password')}),
         ('Personal_Data', {'fields': ('email', 'first_name', 'last_name')}),
-        ('Permissions', {'fields':('groups','is_staff', 'is_active','is_superuser')}),
-        ('Images', {'fields':('avatar','background')}),
-        #('Dates', {'fields': ('last_login', 'date_joined')}),
+        ('Permissions', {'fields': ('groups', 'is_staff', 'is_active', 'is_superuser')}),
+        ('Images', {'fields': ('avatar', 'background')}),
+        # ('Dates', {'fields': ('last_login', 'date_joined')}),
 
-        #('Permissions', {'fields': ('is_staff', 'is_active')})
+        # ('Permissions', {'fields': ('is_staff', 'is_active')})
     )
     # add_fieldsets = (
     #     (None,{
@@ -42,9 +44,8 @@ class UserProfileAdmin(UserAdmin):
     ordering = ('username',)
 
 
-
-#@admin.register()
-#class ChoiceInline(admin.StackedInline):
+# @admin.register()
+# class ChoiceInline(admin.StackedInline):
 #    model = Choice
 #    extra = 3
 
@@ -54,27 +55,36 @@ class QuestionAdmin(admin.ModelAdmin):
         (None, {'fields': ['question_text']}),
         ('Date information', {'fields': ['pub_date'], 'classes': ['collapse']}),
     ]
-    #inlines = [ChoiceInline]
+    # inlines = [ChoiceInline]
     list_display = ('question_text', 'pub_date')
     list_filter = ['question_text', 'pub_date']
     search_fields = ['question_text', 'pub_date']
 
+
 @admin.register(Persona)
 class PersonaAdmin(admin.ModelAdmin):
-    pass
+    list_per_page = 10
+    search_fields = ['first_name', 'last_name']
 
 
 @admin.register(Curso)
 class CursoAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('compuesto', 'name', 'year', 'activo')
+    list_filter = ['activo', 'year']
+    filter_horizontal = ['personas']
+
+    def activo_html_display(self, obj):
+        respuesta = 'No'
+        if obj: respuesta = "Si"
+
+        return format_html(
+            f'<span >{respuesta}</span>'
+        )
+
 
 @admin.register(Calificacion)
 class CalificacionAdmin(admin.ModelAdmin):
     pass
 
 
-
-
-
 admin.site.register(Question, QuestionAdmin)
-

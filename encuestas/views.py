@@ -109,15 +109,15 @@ def pages(request):
             profile = request.user
         finally:
             if request.method == 'POST':
-                form = UserProfileForm(request.POST, request.FILES, instance=profile)
-                # form = UserProfileChangeForm(request.POST, request.FILES, instance=profile)
+                #form = UserProfileForm(request.POST, request.FILES, instance=profile)
+                form = UserProfileChangeForm(request.POST, request.FILES, instance=profile)
                 if form.is_valid():
                     form.save()
                     # return render(request, load_template, {'form': form})
                     return redirect(load_template)
 
             else:
-                form = UserProfileForm(instance=profile)
+                form = UserProfileChangeForm(instance=profile)
                 return render(request, load_template, {'form': form})
         context = {'form': form}
 

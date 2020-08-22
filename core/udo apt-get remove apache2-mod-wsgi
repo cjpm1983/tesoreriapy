@@ -1,0 +1,2009 @@
+-- Logs begin at Mon 2020-06-08 02:13:00 CDT, end at Thu 2020-08-20 02:28:13 CDT. --
+ago 20 00:09:06 Jezreel sessionclean[3880]: PHP Warning:  PHP Startup: Unable to load dynamic library 'xmlrpc' (tried: /usr/lib/php/20190902/xmlrpc (/usr/lib/php/20190902/xmlrpc: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/xmlrpc.so (/usr/lib/php/20190902/xmlrpc.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+ago 20 00:09:06 Jezreel sessionclean[3880]: PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+ago 20 00:09:06 Jezreel sessionclean[3880]: PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+ago 20 00:09:06 Jezreel sessionclean[3880]: PHP Warning:  PHP Startup: Unable to load dynamic library 'intl' (tried: /usr/lib/php/20170718/intl (/usr/lib/php/20170718/intl: cannot open shared object file: No such file or directory), /usr/lib/php/20170718/intl.so (/usr/lib/php/20170718/intl.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+ago 20 00:09:06 Jezreel systemd[1]: Started Clean php session files.
+-- Subject: Unit phpsessionclean.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit phpsessionclean.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[1]: [0;1;39m[0;1;31m[0;1;39msession-c1.scope: Killing process 1102 (lightdm) with signal SIGTERM.[0m
+ago 20 00:11:16 Jezreel systemd[1]: [0;1;39m[0;1;31m[0;1;39msession-c1.scope: Killing process 1187 (lightdm-greeter) with signal SIGTERM.[0m
+ago 20 00:11:16 Jezreel systemd[1]: [0;1;39m[0;1;31m[0;1;39msession-c1.scope: Killing process 1189 (unity-greeter) with signal SIGTERM.[0m
+ago 20 00:11:16 Jezreel systemd[1]: [0;1;39m[0;1;31m[0;1;39msession-c1.scope: Killing process 1258 (at-spi-bus-laun) with signal SIGTERM.[0m
+ago 20 00:11:16 Jezreel systemd[1]: [0;1;39m[0;1;31m[0;1;39msession-c1.scope: Killing process 1277 (dbus-daemon) with signal SIGTERM.[0m
+ago 20 00:11:16 Jezreel systemd[1]: [0;1;39m[0;1;31m[0;1;39msession-c1.scope: Killing process 1313 (at-spi2-registr) with signal SIGTERM.[0m
+ago 20 00:11:16 Jezreel systemd[1]: [0;1;39m[0;1;31m[0;1;39msession-c1.scope: Killing process 1340 (nm-applet) with signal SIGTERM.[0m
+ago 20 00:11:16 Jezreel systemd[1]: [0;1;39m[0;1;31m[0;1;39msession-c1.scope: Killing process 1342 (unity-settings-) with signal SIGTERM.[0m
+ago 20 00:11:16 Jezreel systemd[1]: Stopping Session c1 of user lightdm.
+-- Subject: Unit session-c1.scope has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit session-c1.scope has begun shutting down.
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1240] error requesting auth for org.freedesktop.NetworkManager.wifi.share.open: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1286] error requesting auth for org.freedesktop.NetworkManager.enable-disable-network: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1354] error requesting auth for org.freedesktop.NetworkManager.sleep-wake: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1426] error requesting auth for org.freedesktop.NetworkManager.enable-disable-wifi: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel lightdm[1441]: pam_unix(lightdm:session): session opened for user cpalacios by (uid=0)
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1466] error requesting auth for org.freedesktop.NetworkManager.enable-disable-wwan: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1491] error requesting auth for org.freedesktop.NetworkManager.enable-disable-wimax: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1532] error requesting auth for org.freedesktop.NetworkManager.network-control: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1563] error requesting auth for org.freedesktop.NetworkManager.wifi.share.protected: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1718] error requesting auth for org.freedesktop.NetworkManager.wifi.share.open: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1736] error requesting auth for org.freedesktop.NetworkManager.settings.modify.system: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1755] error requesting auth for org.freedesktop.NetworkManager.settings.modify.own: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1772] error requesting auth for org.freedesktop.NetworkManager.settings.modify.hostname: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1793] error requesting auth for org.freedesktop.NetworkManager.settings.modify.global-dns: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1825] error requesting auth for org.freedesktop.NetworkManager.reload: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1921] error requesting auth for org.freedesktop.NetworkManager.checkpoint-rollback: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1954] error requesting auth for org.freedesktop.NetworkManager.enable-disable-statistics: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597896676.1972] error requesting auth for org.freedesktop.NetworkManager.enable-disable-connectivity-check: Authorization check failed: Failed to open file “/proc/1340/status”: No such file or directory[0m
+ago 20 00:11:16 Jezreel systemd[1]: Created slice User Slice of cpalacios.
+-- Subject: Unit user-1000.slice has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit user-1000.slice has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[1]: Starting User Manager for UID 1000...
+-- Subject: Unit user@1000.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit user@1000.service has begun starting up.
+ago 20 00:11:16 Jezreel systemd-logind[890]: New session c2 of user cpalacios.
+-- Subject: A new session c2 has been created for user cpalacios
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID c2 has been created for the user cpalacios.
+-- 
+-- The leading process of the session is 1441.
+ago 20 00:11:16 Jezreel systemd[1]: Started Session c2 of user cpalacios.
+-- Subject: Unit session-c2.scope has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit session-c2.scope has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[4026]: pam_unix(systemd-user:session): session opened for user cpalacios by (uid=0)
+ago 20 00:11:16 Jezreel systemd[4026]: Listening on GnuPG network certificate management daemon.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[1115]: pam_unix(systemd-user:session): session closed for user lightdm
+ago 20 00:11:16 Jezreel systemd[4026]: Starting D-Bus User Message Bus Socket.
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun starting up.
+ago 20 00:11:16 Jezreel systemd[4026]: Started Pending report trigger for Ubuntu Report.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[4026]: Reached target Paths.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[4026]: Listening on GnuPG cryptographic agent and passphrase cache.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[4026]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[4026]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[4026]: Reached target Timers.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[4026]: Listening on REST API socket for snapd user session agent.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[4026]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[4026]: Listening on D-Bus User Message Bus Socket.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[4026]: Reached target Sockets.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[4026]: Reached target Basic System.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[1]: Started User Manager for UID 1000.
+-- Subject: Unit user@1000.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit user@1000.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[4026]: Reached target Default.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[4026]: Startup finished in 237ms.
+-- Subject: User manager start-up is now complete
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The user manager instance for user 1000 has been started. All services queued
+-- for starting have been started. Note that other services might still be starting
+-- up or be started at any later time.
+-- 
+-- Startup of the manager took 237078 microseconds.
+ago 20 00:11:16 Jezreel systemd[1]: Stopped Session c1 of user lightdm.
+-- Subject: Unit session-c1.scope has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit session-c1.scope has finished shutting down.
+ago 20 00:11:16 Jezreel systemd-logind[890]: Removed session c1.
+-- Subject: Session c1 has been terminated
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A session with the ID c1 has been terminated.
+ago 20 00:11:16 Jezreel systemd[1]: Stopping User Manager for UID 122...
+-- Subject: Unit user@122.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit user@122.service has begun shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopping Virtual filesystem service...
+-- Subject: Unit UNIT has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopping D-Bus User Message Bus...
+-- Subject: Unit UNIT has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopping Indicator Application Service...
+-- Subject: Unit UNIT has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopping Indicator Date & Time Backend...
+-- Subject: Unit UNIT has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopping Indicator Session Service...
+-- Subject: Unit UNIT has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopping Indicator Power...
+-- Subject: Unit UNIT has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopped target Default.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopping Indicator Keyboard Backend...
+-- Subject: Unit UNIT has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopping Indicator Sound Service...
+-- Subject: Unit UNIT has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun shutting down.
+ago 20 00:11:16 Jezreel unknown[1343]: [0;1;39m[0;1;31m[0;1;39mg_object_ref: assertion 'object->ref_count > 0' failed[0m
+ago 20 00:11:16 Jezreel systemd[1114]: Stopped Indicator Session Service.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopped Indicator Date & Time Backend.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopped D-Bus User Message Bus.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopped Indicator Keyboard Backend.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopped Indicator Power.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopped Indicator Application Service.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopped Virtual filesystem service.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopped Indicator Sound Service.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopped target Basic System.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopped target Sockets.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Closed GnuPG cryptographic agent and passphrase cache.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Closed REST API socket for snapd user session agent.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Closed GnuPG network certificate management daemon.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Closed D-Bus User Message Bus Socket.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopped target Paths.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopped Pending report trigger for Ubuntu Report.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Reached target Shutdown.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:16 Jezreel systemd[1114]: Starting Exit the Session...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun starting up.
+ago 20 00:11:16 Jezreel systemd[1114]: Stopped target Timers.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1114]: Received SIGRTMIN+24 from PID 4053 (kill).
+ago 20 00:11:16 Jezreel systemd[1]: Stopped User Manager for UID 122.
+-- Subject: Unit user@122.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit user@122.service has finished shutting down.
+ago 20 00:11:16 Jezreel systemd[1]: Removed slice User Slice of lightdm.
+-- Subject: Unit user-122.slice has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit user-122.slice has finished shutting down.
+ago 20 00:11:17 Jezreel systemd[4026]: Started D-Bus User Message Bus.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:17 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] AppArmor D-Bus mediation is enabled
+ago 20 00:11:17 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.freedesktop.systemd1'
+ago 20 00:11:18 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.5' (uid=1000 pid=4137 comm="/usr/bin/ibus-daemon --daemonize --xim --address u" label="unconfined")
+ago 20 00:11:18 Jezreel systemd[4026]: Starting Virtual filesystem service...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun starting up.
+ago 20 00:11:18 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gtk.vfs.Daemon'
+ago 20 00:11:18 Jezreel systemd[4026]: Started Virtual filesystem service.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:18 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating service name='org.freedesktop.portal.IBus' requested by ':1.5' (uid=1000 pid=4137 comm="/usr/bin/ibus-daemon --daemonize --xim --address u" label="unconfined")
+ago 20 00:11:18 Jezreel gnome-session-c[4138]: [0;1;39m[0;1;31m[0;1;39mCouldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-03oAcWbvZj: Connection refused[0m
+ago 20 00:11:18 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.freedesktop.portal.IBus'
+ago 20 00:11:18 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating service name='org.gnome.ScreenSaver' requested by ':1.13' (uid=1000 pid=4043 comm="/usr/lib/gnome-session/gnome-session-binary --sess" label="unconfined")
+ago 20 00:11:18 Jezreel gnome-screensav[4184]: [0;1;39m[0;1;31m[0;1;39mCouldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-03oAcWbvZj: Connection refused[0m
+ago 20 00:11:18 Jezreel gnome-screensav[4184]: [0;1;39m[0;1;31m[0;1;39mCouldn't get presence status: The name org.gnome.SessionManager was not provided by any .service files[0m
+ago 20 00:11:18 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gnome.ScreenSaver'
+ago 20 00:11:19 Jezreel gnome-keyring-ssh.desktop[4192]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+ago 20 00:11:19 Jezreel gnome-keyring-pkcs11.desktop[4193]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+ago 20 00:11:20 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mCouldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-03oAcWbvZj: Connection refused[0m
+ago 20 00:11:20 Jezreel rtkit-daemon[1391]: Successfully made thread 4213 of process 4213 (n/a) owned by '1000' high priority at nice level -11.
+ago 20 00:11:20 Jezreel rtkit-daemon[1391]: Supervising 1 threads of 1 processes of 1 users.
+ago 20 00:11:20 Jezreel rtkit-daemon[1391]: Supervising 1 threads of 1 processes of 1 users.
+ago 20 00:11:20 Jezreel rtkit-daemon[1391]: Successfully made thread 4214 of process 4213 (n/a) owned by '1000' RT at priority 5.
+ago 20 00:11:20 Jezreel rtkit-daemon[1391]: Supervising 2 threads of 1 processes of 1 users.
+ago 20 00:11:20 Jezreel rtkit-daemon[1391]: Supervising 2 threads of 1 processes of 1 users.
+ago 20 00:11:20 Jezreel rtkit-daemon[1391]: Successfully made thread 4215 of process 4213 (n/a) owned by '1000' RT at priority 5.
+ago 20 00:11:20 Jezreel rtkit-daemon[1391]: Supervising 3 threads of 1 processes of 1 users.
+ago 20 00:11:20 Jezreel dbus-daemon[824]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.87' (uid=1000 pid=4213 comm="/usr/bin/pulseaudio --start --log-target=syslog " label="unconfined")
+ago 20 00:11:23 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39mcurrent session already has an ibus-daemon.[0m
+ago 20 00:11:23 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating via systemd: service name='org.freedesktop.impl.portal.PermissionStore' unit='xdg-permission-store.service' requested by ':1.18' (uid=1000 pid=4199 comm="/usr/bin/gnome-shell " label="unconfined")
+ago 20 00:11:23 Jezreel systemd[4026]: Starting sandboxed app permission store...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun starting up.
+ago 20 00:11:23 Jezreel systemd[4026]: Started sandboxed app permission store.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:23 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+ago 20 00:11:23 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating service name='org.gnome.Shell.CalendarServer' requested by ':1.18' (uid=1000 pid=4199 comm="/usr/bin/gnome-shell " label="unconfined")
+ago 20 00:11:23 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating via systemd: service name='org.gnome.evolution.dataserver.Sources5' unit='evolution-source-registry.service' requested by ':1.22' (uid=1000 pid=4232 comm="/usr/lib/gnome-shell/gnome-shell-calendar-server " label="unconfined")
+ago 20 00:11:23 Jezreel systemd[4026]: Starting Evolution source registry...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun starting up.
+ago 20 00:11:24 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating service name='org.gnome.OnlineAccounts' requested by ':1.23' (uid=1000 pid=4236 comm="/usr/lib/evolution/evolution-source-registry " label="unconfined")
+ago 20 00:11:24 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gnome.evolution.dataserver.Sources5'
+ago 20 00:11:24 Jezreel systemd[4026]: Started Evolution source registry.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:24 Jezreel dbus-daemon[824]: [system] Activating via systemd: service name='org.freedesktop.GeoClue2' unit='geoclue.service' requested by ':1.83' (uid=1000 pid=4199 comm="/usr/bin/gnome-shell " label="unconfined")
+ago 20 00:11:24 Jezreel systemd[1]: Starting Location Lookup Service...
+-- Subject: Unit geoclue.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit geoclue.service has begun starting up.
+ago 20 00:11:24 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gnome.Shell.CalendarServer'
+ago 20 00:11:24 Jezreel dbus-daemon[824]: [system] Activating via systemd: service name='org.freedesktop.bolt' unit='bolt.service' requested by ':1.83' (uid=1000 pid=4199 comm="/usr/bin/gnome-shell " label="unconfined")
+ago 20 00:11:24 Jezreel dbus-daemon[824]: [system] Successfully activated service 'org.freedesktop.GeoClue2'
+ago 20 00:11:24 Jezreel systemd[1]: Started Location Lookup Service.
+-- Subject: Unit geoclue.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit geoclue.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:24 Jezreel systemd[1]: Starting Thunderbolt system service...
+-- Subject: Unit bolt.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit bolt.service has begun starting up.
+ago 20 00:11:24 Jezreel wpa_supplicant[884]: [0;1;39m[0;1;31m[0;1;39mdbus: fill_dict_with_properties dbus_interface=fi.w1.wpa_supplicant1.Interface dbus_property=Stations getter failed[0m
+ago 20 00:11:24 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating service name='ca.desrt.dconf' requested by ':1.18' (uid=1000 pid=4199 comm="/usr/bin/gnome-shell " label="unconfined")
+ago 20 00:11:24 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'ca.desrt.dconf'
+ago 20 00:11:24 Jezreel boltd[4251]: [0;1;39m[0;1;31m[0;1;39mbolt 0.5 starting up.[0m
+ago 20 00:11:24 Jezreel boltd[4251]: config: loading user config
+ago 20 00:11:24 Jezreel boltd[4251]: bouncer: initializing polkit
+ago 20 00:11:24 Jezreel boltd[4251]: udev: initializing udev
+ago 20 00:11:24 Jezreel boltd[4251]: store: loading devices
+ago 20 00:11:24 Jezreel boltd[4251]: [0;1;39m[0;1;31m[0;1;39mpower: force power support: no[0m
+ago 20 00:11:24 Jezreel boltd[4251]: udev: enumerating devices
+ago 20 00:11:24 Jezreel dbus-daemon[824]: [system] Successfully activated service 'org.freedesktop.bolt'
+ago 20 00:11:24 Jezreel systemd[1]: Started Thunderbolt system service.
+-- Subject: Unit bolt.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit bolt.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:24 Jezreel polkitd(authority=local)[924]: [0;1;39m[0;1;31m[0;1;39mRegistered Authentication Agent for unix-session:c2 (system bus name :1.83 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)[0m
+ago 20 00:11:24 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mTelepathy is not available, chat integration will be disabled.[0m
+ago 20 00:11:25 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating via systemd: service name='org.gtk.vfs.UDisks2VolumeMonitor' unit='gvfs-udisks2-volume-monitor.service' requested by ':1.18' (uid=1000 pid=4199 comm="/usr/bin/gnome-shell " label="unconfined")
+ago 20 00:11:25 Jezreel systemd[4026]: Starting Virtual filesystem service - disk device monitor...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun starting up.
+ago 20 00:11:25 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gtk.vfs.UDisks2VolumeMonitor'
+ago 20 00:11:25 Jezreel systemd[4026]: Started Virtual filesystem service - disk device monitor.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:25 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating via systemd: service name='org.gtk.vfs.AfcVolumeMonitor' unit='gvfs-afc-volume-monitor.service' requested by ':1.18' (uid=1000 pid=4199 comm="/usr/bin/gnome-shell " label="unconfined")
+ago 20 00:11:25 Jezreel systemd[4026]: Starting Virtual filesystem service - Apple File Conduit monitor...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun starting up.
+ago 20 00:11:25 Jezreel gvfs-afc-volume-monitor[4263]: Volume monitor alive
+ago 20 00:11:25 Jezreel systemd[4026]: Started Virtual filesystem service - Apple File Conduit monitor.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:25 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gtk.vfs.AfcVolumeMonitor'
+ago 20 00:11:25 Jezreel systemd[4026]: Starting Virtual filesystem service - digital camera monitor...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun starting up.
+ago 20 00:11:25 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating via systemd: service name='org.gtk.vfs.GPhoto2VolumeMonitor' unit='gvfs-gphoto2-volume-monitor.service' requested by ':1.18' (uid=1000 pid=4199 comm="/usr/bin/gnome-shell " label="unconfined")
+ago 20 00:11:25 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gtk.vfs.GPhoto2VolumeMonitor'
+ago 20 00:11:25 Jezreel systemd[4026]: Started Virtual filesystem service - digital camera monitor.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:25 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating via systemd: service name='org.gtk.vfs.GoaVolumeMonitor' unit='gvfs-goa-volume-monitor.service' requested by ':1.18' (uid=1000 pid=4199 comm="/usr/bin/gnome-shell " label="unconfined")
+ago 20 00:11:25 Jezreel systemd[4026]: Starting Virtual filesystem service - GNOME Online Accounts monitor...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun starting up.
+ago 20 00:11:25 Jezreel goa-daemon[4244]: [0;1;39m[0;1;31m[0;1;39mgoa-daemon version 3.28.0 starting[0m
+ago 20 00:11:25 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating service name='org.gnome.Identity' requested by ':1.29' (uid=1000 pid=4244 comm="/usr/lib/gnome-online-accounts/goa-daemon " label="unconfined")
+ago 20 00:11:25 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gnome.Identity'
+ago 20 00:11:25 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gnome.OnlineAccounts'
+ago 20 00:11:25 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gtk.vfs.GoaVolumeMonitor'
+ago 20 00:11:25 Jezreel systemd[4026]: Started Virtual filesystem service - GNOME Online Accounts monitor.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:25 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating via systemd: service name='org.gtk.vfs.MTPVolumeMonitor' unit='gvfs-mtp-volume-monitor.service' requested by ':1.18' (uid=1000 pid=4199 comm="/usr/bin/gnome-shell " label="unconfined")
+ago 20 00:11:25 Jezreel systemd[4026]: Starting Virtual filesystem service - Media Transfer Protocol monitor...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun starting up.
+ago 20 00:11:25 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gtk.vfs.MTPVolumeMonitor'
+ago 20 00:11:25 Jezreel systemd[4026]: Started Virtual filesystem service - Media Transfer Protocol monitor.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:26 Jezreel dbus-daemon[824]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.83' (uid=1000 pid=4199 comm="/usr/bin/gnome-shell " label="unconfined")
+ago 20 00:11:26 Jezreel systemd[1]: Starting PackageKit Daemon...
+-- Subject: Unit packagekit.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit packagekit.service has begun starting up.
+ago 20 00:11:26 Jezreel PackageKit[4290]: daemon start
+ago 20 00:11:26 Jezreel gsd-power[4291]: [0;1;39m[0;1;31m[0;1;39mCouldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-03oAcWbvZj: Connection refused[0m
+ago 20 00:11:26 Jezreel dbus-daemon[824]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+ago 20 00:11:26 Jezreel systemd[1]: Started PackageKit Daemon.
+-- Subject: Unit packagekit.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit packagekit.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:26 Jezreel spice-vdagent[4332]: [0;1;31m[0;1;39m[0;1;31mCannot access vdagent virtio channel /dev/virtio-ports/com.redhat.spice.0[0m
+ago 20 00:11:26 Jezreel systemd[1]: Starting Hostname Service...
+-- Subject: Unit systemd-hostnamed.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit systemd-hostnamed.service has begun starting up.
+ago 20 00:11:26 Jezreel at-spi-dbus-bus.desktop[4308]: [0;1;39m[0;1;31m[0;1;39mdbus-daemon[4319]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=1000 pid=4314 comm="/usr/lib/gnome-settings-daemon/gsd-xsettings " label="unconfined")[0m
+ago 20 00:11:26 Jezreel dbus-daemon[824]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.94' (uid=1000 pid=4295 comm="/usr/lib/gnome-settings-daemon/gsd-rfkill " label="unconfined")
+ago 20 00:11:26 Jezreel gnome-session[4043]: gnome-session-binary[4043]: WARNING: App 'spice-vdagent.desktop' exited with code 1
+ago 20 00:11:26 Jezreel gnome-session-binary[4043]: [0;1;39m[0;1;31m[0;1;39mWARNING: App 'spice-vdagent.desktop' exited with code 1[0m
+ago 20 00:11:26 Jezreel dbus-daemon[824]: [system] Successfully activated service 'org.freedesktop.hostname1'
+ago 20 00:11:26 Jezreel systemd[1]: Started Hostname Service.
+-- Subject: Unit systemd-hostnamed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit systemd-hostnamed.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:26 Jezreel gsd-xsettings[4314]: [0;1;39m[0;1;31m[0;1;39mFailed to get current display configuration state: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.gnome.Mutter.DisplayConfig" does not exist[0m
+ago 20 00:11:26 Jezreel at-spi-dbus-bus.desktop[4308]: [0;1;39m[0;1;31m[0;1;39mdbus-daemon[4319]: Successfully activated service 'org.a11y.atspi.Registry'[0m
+ago 20 00:11:26 Jezreel at-spi-dbus-bus.desktop[4308]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+ago 20 00:11:26 Jezreel kernel: rfkill: input handler disabled
+ago 20 00:11:26 Jezreel gsd-sharing[4300]: [0;1;39m[0;1;31m[0;1;39mFailed to StopUnit service: GDBus.Error:org.freedesktop.systemd1.NoSuchUnit: Unit gnome-user-share-webdav.service not loaded.[0m
+ago 20 00:11:26 Jezreel gsd-sharing[4300]: [0;1;39m[0;1;31m[0;1;39mFailed to StopUnit service: GDBus.Error:org.freedesktop.systemd1.NoSuchUnit: Unit rygel.service not loaded.[0m
+ago 20 00:11:26 Jezreel gsd-sharing[4300]: [0;1;39m[0;1;31m[0;1;39mFailed to StopUnit service: GDBus.Error:org.freedesktop.systemd1.NoSuchUnit: Unit gnome-remote-desktop.service not loaded.[0m
+ago 20 00:11:27 Jezreel gnome-session-binary[4043]: [0;1;39m[0;1;31m[0;1;39mEntering running state[0m
+ago 20 00:11:27 Jezreel at-spi2-registr[4346]: [0;1;39m[0;1;31m[0;1;39mFailed to register client: GDBus.Error:org.gnome.SessionManager.AlreadyRegistered: Unable to register client[0m
+ago 20 00:11:27 Jezreel at-spi2-registr[4346]: [0;1;39m[0;1;31m[0;1;39mUnable to register client with session manager[0m
+ago 20 00:11:27 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mJS WARNING: [/usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/appIcons.js 1028]: unreachable code after return statement[0m
+ago 20 00:11:28 Jezreel dbus-daemon[824]: [system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service' requested by ':1.106' (uid=1000 pid=4339 comm="/usr/lib/gnome-settings-daemon/gsd-keyboard " label="unconfined")
+ago 20 00:11:28 Jezreel systemd[1]: Starting Locale Service...
+-- Subject: Unit systemd-localed.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit systemd-localed.service has begun starting up.
+ago 20 00:11:28 Jezreel clipit[4406]: [0;1;39m[0;1;31m[0;1;39mFailed to load module "canberra-gtk-module"[0m
+ago 20 00:11:28 Jezreel dbus-daemon[824]: [system] Successfully activated service 'org.freedesktop.locale1'
+ago 20 00:11:28 Jezreel systemd[1]: Started Locale Service.
+-- Subject: Unit systemd-localed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit systemd-localed.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:28 Jezreel gsd-media-keys[4348]: [0;1;39m[0;1;31m[0;1;39mg_variant_get_va: assertion 'value != NULL' failed[0m
+ago 20 00:11:28 Jezreel gsd-media-keys[4348]: [0;1;39m[0;1;31m[0;1;39mg_variant_unref: assertion 'value != NULL' failed[0m
+ago 20 00:11:28 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating via systemd: service name='org.gnome.evolution.dataserver.Calendar7' unit='evolution-calendar-factory.service' requested by ':1.22' (uid=1000 pid=4232 comm="/usr/lib/gnome-shell/gnome-shell-calendar-server " label="unconfined")
+ago 20 00:11:28 Jezreel systemd[4026]: Starting Evolution calendar service...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun starting up.
+ago 20 00:11:28 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating service name='org.freedesktop.FileManager1' requested by ':1.55' (uid=1000 pid=4400 comm="nautilus-desktop " label="unconfined")
+ago 20 00:11:28 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.freedesktop.FileManager1'
+ago 20 00:11:29 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-DEBUG] Registering StatusNotifierItem :1.54/org/ayatana/NotificationItem/clipit[0m
+ago 20 00:11:30 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mError looking up permission: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for geolocation[0m
+ago 20 00:11:30 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gnome.evolution.dataserver.Calendar7'
+ago 20 00:11:30 Jezreel systemd[4026]: Started Evolution calendar service.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:31 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating via systemd: service name='org.gnome.evolution.dataserver.AddressBook9' unit='evolution-addressbook-factory.service' requested by ':1.59' (uid=1000 pid=4464 comm="/usr/lib/evolution/evolution-calendar-factory-subp" label="unconfined")
+ago 20 00:11:31 Jezreel systemd[4026]: Starting Evolution address book service...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun starting up.
+ago 20 00:11:31 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gnome.evolution.dataserver.AddressBook9'
+ago 20 00:11:31 Jezreel systemd[4026]: Started Evolution address book service.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:34 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating via systemd: service name='org.gtk.vfs.Metadata' unit='gvfs-metadata.service' requested by ':1.55' (uid=1000 pid=4400 comm="nautilus-desktop " label="unconfined")
+ago 20 00:11:34 Jezreel systemd[4026]: Starting Virtual filesystem metadata service...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun starting up.
+ago 20 00:11:34 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gtk.vfs.Metadata'
+ago 20 00:11:34 Jezreel systemd[4026]: Started Virtual filesystem metadata service.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:11:34 Jezreel nautilus-deskto[4400]: [0;1;39m[0;1;31m[0;1;39mCalled "net usershare info" but it failed: Failed to execute child process “net” (No such file or directory)[0m
+ago 20 00:11:34 Jezreel gnome-shell[4199]: GNOME Shell started at Thu Aug 20 2020 00:11:26 GMT-0400 (CDT)
+ago 20 00:11:45 Jezreel dbus-daemon[824]: [0;1;39m[0;1;31m[0;1;39m[system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)[0m
+ago 20 00:11:45 Jezreel pulseaudio[4213]: [0;1;31m[0;1;39m[0;1;31m[pulseaudio] bluez5-util.c: GetManagedObjects() failed: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.[0m
+ago 20 00:12:34 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mplugin appstream took 6,0 seconds to do setup[0m
+ago 20 00:12:34 Jezreel gnome-software[4559]: enabled plugins: os-release, packagekit-local, shell-extensions, packagekit-offline, systemd-updates, desktop-categories, packagekit-refine-repos, packagekit, fwupd, packagekit-proxy, packagekit-url-to-app, packagekit-refresh, ubuntuone, packagekit-upgrade, appstream, rewrite-resource, odrs, desktop-menu-path, modalias, hardcoded-blacklist, packagekit-refine, hardcoded-featured, steam, hardcoded-popular, generic-updates, snap, packagekit-history, provenance, provenance-license, icons, key-colors, key-colors-metadata
+ago 20 00:12:34 Jezreel gnome-software[4559]: disabled plugins: dpkg, dummy, repos, epiphany
+ago 20 00:12:34 Jezreel dbus-daemon[824]: [system] Activating via systemd: service name='org.freedesktop.fwupd' unit='fwupd.service' requested by ':1.111' (uid=1000 pid=4559 comm="/usr/bin/gnome-software --gapplication-service " label="unconfined")
+ago 20 00:12:34 Jezreel systemd[1]: Starting Firmware update daemon...
+-- Subject: Unit fwupd.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit fwupd.service has begun starting up.
+ago 20 00:12:35 Jezreel dbus-daemon[824]: [system] Successfully activated service 'org.freedesktop.fwupd'
+ago 20 00:12:35 Jezreel systemd[1]: Started Firmware update daemon.
+-- Subject: Unit fwupd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit fwupd.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:12:38 Jezreel pkexec[4595]: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+ago 20 00:12:38 Jezreel pkexec[4595]: [0;1;39m[0;1;31m[0;1;39mcpalacios: Executing command [USER=root] [TTY=unknown] [CWD=/home/cpalacios] [COMMAND=/usr/lib/update-notifier/package-system-locked][0m
+ago 20 00:12:38 Jezreel PackageKit[4290]: get-updates transaction /1166_cdeeaecc from uid 1000 finished with success after 2934ms
+ago 20 00:12:39 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mfailed to call gs_plugin_add_popular on snap: lookup api.snapcraft.io: no such host[0m
+ago 20 00:12:39 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mfailed to call gs_plugin_add_featured on snap: lookup api.snapcraft.io: no such host[0m
+ago 20 00:12:39 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mfailed to call gs_plugin_add_category_apps on snap: lookup api.snapcraft.io: no such host[0m
+ago 20 00:12:39 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mfailed to call gs_plugin_add_category_apps on snap: lookup api.snapcraft.io: no such host[0m
+ago 20 00:12:39 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mhiding category productivity featured applications: found only 0 to show, need at least 9[0m
+ago 20 00:12:39 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-DEBUG] Registering StatusNotifierItem :1.63/org/ayatana/NotificationItem/software_update_available[0m
+ago 20 00:12:39 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-DEBUG] Registering StatusNotifierItem :1.63/org/ayatana/NotificationItem/livepatch[0m
+ago 20 00:12:41 Jezreel PackageKit[4290]: resolve transaction /1167_bdbeedbc from uid 1000 finished with success after 1787ms
+ago 20 00:12:41 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mOnly 1 apps for recent list, hiding[0m
+ago 20 00:12:42 Jezreel PackageKit[4290]: resolve transaction /1168_acdbbaaa from uid 1000 finished with success after 1675ms
+ago 20 00:12:44 Jezreel PackageKit[4290]: resolve transaction /1169_aecddded from uid 1000 finished with success after 1664ms
+ago 20 00:12:44 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mhiding category graphics featured applications: found only 1 to show, need at least 9[0m
+ago 20 00:12:46 Jezreel PackageKit[4290]: resolve transaction /1170_eabeaeeb from uid 1000 finished with success after 1645ms
+ago 20 00:12:46 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mOnly 8 apps for popular list, hiding[0m
+ago 20 00:12:48 Jezreel PackageKit[4290]: resolve transaction /1171_ceeddaaa from uid 1000 finished with success after 1880ms
+ago 20 00:13:14 Jezreel PackageKit[4290]: search-file transaction /1172_dbbaebde from uid 1000 finished with success after 26594ms
+ago 20 00:13:16 Jezreel PackageKit[4290]: search-file transaction /1173_bdcdceae from uid 1000 finished with success after 1884ms
+ago 20 00:13:18 Jezreel PackageKit[4290]: search-file transaction /1174_ecdebccd from uid 1000 finished with success after 1882ms
+ago 20 00:13:20 Jezreel PackageKit[4290]: search-file transaction /1175_daeeccdd from uid 1000 finished with success after 1864ms
+ago 20 00:13:22 Jezreel PackageKit[4290]: search-file transaction /1176_eaccbbae from uid 1000 finished with success after 1906ms
+ago 20 00:13:24 Jezreel PackageKit[4290]: search-file transaction /1177_ddeedeae from uid 1000 finished with success after 1899ms
+ago 20 00:13:26 Jezreel PackageKit[4290]: search-file transaction /1178_ccdaebec from uid 1000 finished with success after 1900ms
+ago 20 00:13:28 Jezreel PackageKit[4290]: search-file transaction /1179_bbcecbbb from uid 1000 finished with success after 1909ms
+ago 20 00:13:30 Jezreel PackageKit[4290]: search-file transaction /1180_cedaebce from uid 1000 finished with success after 1894ms
+ago 20 00:13:32 Jezreel PackageKit[4290]: search-file transaction /1181_ddeaeebc from uid 1000 finished with success after 1900ms
+ago 20 00:13:32 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mFailed to find one package for phpmyadmin.desktop, /usr/share/applications/phpmyadmin.desktop, [0][0m
+ago 20 00:13:35 Jezreel PackageKit[4290]: get-details transaction /1182_babeccab from uid 1000 finished with success after 2191ms
+ago 20 00:13:35 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mFailed to load snap icon: local snap has no icon[0m
+ago 20 00:13:35 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mFailed to load snap icon: local snap has no icon[0m
+ago 20 00:13:35 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mFailed to load snap icon: local snap has no icon[0m
+ago 20 00:13:35 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mFailed to load snap icon: local snap has no icon[0m
+ago 20 00:13:35 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mFailed to load snap icon: local snap has no icon[0m
+ago 20 00:13:35 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mFailed to load snap icon: local snap has no icon[0m
+ago 20 00:13:35 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mFailed to load snap icon: local snap has no icon[0m
+ago 20 00:13:35 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mFailed to load snap icon: local snap has no icon[0m
+ago 20 00:13:35 Jezreel gnome-software[4559]: [0;1;39m[0;1;31m[0;1;39mFailed to load snap icon: local snap has no icon[0m
+ago 20 00:14:08 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating service name='org.gnome.Nautilus' requested by ':1.18' (uid=1000 pid=4199 comm="/usr/bin/gnome-shell " label="unconfined")
+ago 20 00:14:08 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gnome.Nautilus'
+ago 20 00:14:11 Jezreel dbus-daemon[824]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.117' (uid=1000 pid=4745 comm="/usr/bin/nautilus --gapplication-service " label="unconfined")
+ago 20 00:14:11 Jezreel systemd[1]: Starting Hostname Service...
+-- Subject: Unit systemd-hostnamed.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit systemd-hostnamed.service has begun starting up.
+ago 20 00:14:11 Jezreel dbus-daemon[824]: [system] Successfully activated service 'org.freedesktop.hostname1'
+ago 20 00:14:11 Jezreel systemd[1]: Started Hostname Service.
+-- Subject: Unit systemd-hostnamed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit systemd-hostnamed.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:14:11 Jezreel nautilus[4745]: [0;1;39m[0;1;31m[0;1;39mCalled "net usershare info" but it failed: Failed to execute child process “net” (No such file or directory)[0m
+ago 20 00:14:19 Jezreel gvfsd[4141]: mkdir failed on directory /var/run/samba: Permission denied
+ago 20 00:14:19 Jezreel gvfsd[4141]: mkdir failed on directory /var/run/samba: Permission denied
+ago 20 00:14:20 Jezreel ntfs-3g[4796]: [0;1;39m[0;1;31m[0;1;39mVersion 2017.3.23 integrated FUSE 28[0m
+ago 20 00:14:20 Jezreel ntfs-3g[4796]: [0;1;39m[0;1;31m[0;1;39mMounted /dev/sda4 (Read-Write, label "Almacen", NTFS 3.1)[0m
+ago 20 00:14:20 Jezreel ntfs-3g[4796]: [0;1;39m[0;1;31m[0;1;39mCmdline options: rw,nodev,nosuid,uid=1000,gid=1000,uhelper=udisks2[0m
+ago 20 00:14:20 Jezreel ntfs-3g[4796]: [0;1;39m[0;1;31m[0;1;39mMount options: rw,nodev,nosuid,uhelper=udisks2,allow_other,nonempty,relatime,default_permissions,fsname=/dev/sda4,blkdev,blksize=4096[0m
+ago 20 00:14:20 Jezreel ntfs-3g[4796]: [0;1;39m[0;1;31m[0;1;39mGlobal ownership and permissions enforced, configuration type 7[0m
+ago 20 00:14:20 Jezreel systemd[1]: Created slice system-clean\x2dmount\x2dpoint.slice.
+-- Subject: Unit system-clean\x2dmount\x2dpoint.slice has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit system-clean\x2dmount\x2dpoint.slice has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:14:20 Jezreel systemd[1]: Started Clean the /media/cpalacios/Almacen mount point.
+-- Subject: Unit clean-mount-point@media-cpalacios-Almacen.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit clean-mount-point@media-cpalacios-Almacen.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:14:20 Jezreel udisksd[886]: [0;1;39m[0;1;31m[0;1;39mMounted /dev/sda4 at /media/cpalacios/Almacen on behalf of uid 1000[0m
+ago 20 00:14:20 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating service name='org.gnome.Shell.HotplugSniffer' requested by ':1.18' (uid=1000 pid=4199 comm="/usr/bin/gnome-shell " label="unconfined")
+ago 20 00:14:20 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gnome.Shell.HotplugSniffer'
+ago 20 00:14:31 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating service name='org.gnome.Totem' requested by ':1.69' (uid=1000 pid=4745 comm="/usr/bin/nautilus --gapplication-service " label="unconfined")
+ago 20 00:14:32 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gnome.Totem'
+ago 20 00:14:37 Jezreel totem[4815]: [0;1;39m[0;1;31m[0;1;39mDrawing a gadget with negative dimensions. Did you forget to allocate a size? (node slider owner GtkScale)[0m
+ago 20 00:14:37 Jezreel totem[4815]: [0;1;39m[0;1;31m[0;1;39mDrawing a gadget with negative dimensions. Did you forget to allocate a size? (node slider owner GtkScale)[0m
+ago 20 00:14:48 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mJS ERROR: Exception in callback for signal: position-changed: TypeError: this._rect is null[0m
+                                           [0;1;39mgetCurrentRect@resource:///org/gnome/shell/ui/keyboard.js:561:22[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_onFocusPositionChanged@resource:///org/gnome/shell/ui/keyboard.js:643:20[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_emit@resource:///org/gnome/gjs/modules/signals.js:128:27[0m
+                                           [0;1;39m_setCurrentWindow/this._currentWindowPositionId<@resource:///org/gnome/shell/ui/keyboard.js:535:21[0m
+ago 20 00:14:49 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mJS ERROR: Exception in callback for signal: position-changed: TypeError: this._rect is null[0m
+                                           [0;1;39mgetCurrentRect@resource:///org/gnome/shell/ui/keyboard.js:561:22[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_onFocusPositionChanged@resource:///org/gnome/shell/ui/keyboard.js:643:20[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_emit@resource:///org/gnome/gjs/modules/signals.js:128:27[0m
+                                           [0;1;39m_setCurrentWindow/this._currentWindowPositionId<@resource:///org/gnome/shell/ui/keyboard.js:535:21[0m
+ago 20 00:15:01 Jezreel snapd[883]: autorefresh.go:390: Cannot prepare auto-refresh change: cannot refresh snap-declaration for "gtk-common-themes": Get https://api.snapcraft.io/api/v1/snaps/assertions/snap-declaration/16/jZLfBRzf1cYlYysIjD2bwSzNtngY0qit?max-format=4: dial tcp: lookup api.snapcraft.io: no such host
+ago 20 00:15:01 Jezreel snapd[883]: stateengine.go:150: state ensure error: cannot refresh snap-declaration for "gtk-common-themes": Get https://api.snapcraft.io/api/v1/snaps/assertions/snap-declaration/16/jZLfBRzf1cYlYysIjD2bwSzNtngY0qit?max-format=4: dial tcp: lookup api.snapcraft.io: no such host
+ago 20 00:15:01 Jezreel CRON[4863]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 00:15:01 Jezreel CRON[4864]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+ago 20 00:15:01 Jezreel CRON[4863]: pam_unix(cron:session): session closed for user root
+ago 20 00:15:41 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mJS ERROR: Exception in callback for signal: position-changed: TypeError: this._rect is null[0m
+                                           [0;1;39mgetCurrentRect@resource:///org/gnome/shell/ui/keyboard.js:561:22[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_onFocusPositionChanged@resource:///org/gnome/shell/ui/keyboard.js:643:20[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_emit@resource:///org/gnome/gjs/modules/signals.js:128:27[0m
+                                           [0;1;39m_setCurrentWindow/this._currentWindowPositionId<@resource:///org/gnome/shell/ui/keyboard.js:535:21[0m
+ago 20 00:15:41 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mJS ERROR: Exception in callback for signal: position-changed: TypeError: this._rect is null[0m
+                                           [0;1;39mgetCurrentRect@resource:///org/gnome/shell/ui/keyboard.js:561:22[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_onFocusPositionChanged@resource:///org/gnome/shell/ui/keyboard.js:643:20[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_emit@resource:///org/gnome/gjs/modules/signals.js:128:27[0m
+                                           [0;1;39m_setCurrentWindow/this._currentWindowPositionId<@resource:///org/gnome/shell/ui/keyboard.js:535:21[0m
+ago 20 00:15:42 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mJS ERROR: Exception in callback for signal: position-changed: TypeError: this._rect is null[0m
+                                           [0;1;39mgetCurrentRect@resource:///org/gnome/shell/ui/keyboard.js:561:22[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_onFocusPositionChanged@resource:///org/gnome/shell/ui/keyboard.js:643:20[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_emit@resource:///org/gnome/gjs/modules/signals.js:128:27[0m
+                                           [0;1;39m_setCurrentWindow/this._currentWindowPositionId<@resource:///org/gnome/shell/ui/keyboard.js:535:21[0m
+ago 20 00:15:43 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mJS ERROR: Exception in callback for signal: position-changed: TypeError: this._rect is null[0m
+                                           [0;1;39mgetCurrentRect@resource:///org/gnome/shell/ui/keyboard.js:561:22[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_onFocusPositionChanged@resource:///org/gnome/shell/ui/keyboard.js:643:20[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_emit@resource:///org/gnome/gjs/modules/signals.js:128:27[0m
+                                           [0;1;39m_setCurrentWindow/this._currentWindowPositionId<@resource:///org/gnome/shell/ui/keyboard.js:535:21[0m
+ago 20 00:16:54 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mJS ERROR: Exception in callback for signal: position-changed: TypeError: this._rect is null[0m
+                                           [0;1;39mgetCurrentRect@resource:///org/gnome/shell/ui/keyboard.js:561:22[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_onFocusPositionChanged@resource:///org/gnome/shell/ui/keyboard.js:643:20[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_emit@resource:///org/gnome/gjs/modules/signals.js:128:27[0m
+                                           [0;1;39m_setCurrentWindow/this._currentWindowPositionId<@resource:///org/gnome/shell/ui/keyboard.js:535:21[0m
+ago 20 00:16:54 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mJS ERROR: Exception in callback for signal: position-changed: TypeError: this._rect is null[0m
+                                           [0;1;39mgetCurrentRect@resource:///org/gnome/shell/ui/keyboard.js:561:22[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_onFocusPositionChanged@resource:///org/gnome/shell/ui/keyboard.js:643:20[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_emit@resource:///org/gnome/gjs/modules/signals.js:128:27[0m
+                                           [0;1;39m_setCurrentWindow/this._currentWindowPositionId<@resource:///org/gnome/shell/ui/keyboard.js:535:21[0m
+ago 20 00:17:01 Jezreel CRON[4904]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 00:17:01 Jezreel CRON[4905]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+ago 20 00:17:01 Jezreel CRON[4904]: pam_unix(cron:session): session closed for user root
+ago 20 00:25:01 Jezreel CRON[5122]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 00:25:01 Jezreel CRON[5123]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+ago 20 00:25:01 Jezreel CRON[5122]: pam_unix(cron:session): session closed for user root
+ago 20 00:35:01 Jezreel CRON[5377]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 00:35:01 Jezreel CRON[5378]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+ago 20 00:35:01 Jezreel CRON[5377]: pam_unix(cron:session): session closed for user root
+ago 20 00:39:01 Jezreel CRON[5492]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 00:39:01 Jezreel CRON[5493]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+ago 20 00:39:01 Jezreel CRON[5492]: pam_unix(cron:session): session closed for user root
+ago 20 00:39:06 Jezreel systemd[1]: Starting Clean php session files...
+-- Subject: Unit phpsessionclean.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit phpsessionclean.service has begun starting up.
+ago 20 00:39:06 Jezreel sessionclean[5495]: PHP Warning:  PHP Startup: Unable to load dynamic library 'openssl' (tried: /usr/lib/php/20190902/openssl (/usr/lib/php/20190902/openssl: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/openssl.so (/usr/lib/php/20190902/openssl.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+ago 20 00:39:06 Jezreel sessionclean[5495]: PHP Warning:  PHP Startup: Unable to load dynamic library 'xmlrpc' (tried: /usr/lib/php/20190902/xmlrpc (/usr/lib/php/20190902/xmlrpc: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/xmlrpc.so (/usr/lib/php/20190902/xmlrpc.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+ago 20 00:39:06 Jezreel sessionclean[5495]: PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+ago 20 00:39:06 Jezreel sessionclean[5495]: PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+ago 20 00:39:06 Jezreel sessionclean[5495]: PHP Warning:  PHP Startup: Unable to load dynamic library 'intl' (tried: /usr/lib/php/20170718/intl (/usr/lib/php/20170718/intl: cannot open shared object file: No such file or directory), /usr/lib/php/20170718/intl.so (/usr/lib/php/20170718/intl.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+ago 20 00:39:07 Jezreel systemd[1]: Started Clean php session files.
+-- Subject: Unit phpsessionclean.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit phpsessionclean.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:42:55 Jezreel gnome-screensaver-dialog[5663]: [0;1;39m[0;1;31m[0;1;39mpam_unix(gnome-screensaver:auth): authentication failure; logname= uid=1000 euid=1000 tty=:0.0 ruser= rhost=  user=cpalacios[0m
+ago 20 00:42:59 Jezreel unix_chkpwd[5676]: [0;1;39m[0;1;31m[0;1;39mpassword check failed for user (cpalacios)[0m
+ago 20 00:42:59 Jezreel gnome-screensaver-dialog[5663]: [0;1;39m[0;1;31m[0;1;39mpam_unix(gnome-screensaver:auth): authentication failure; logname= uid=1000 euid=1000 tty=:0.0 ruser= rhost=  user=cpalacios[0m
+ago 20 00:43:13 Jezreel gnome-screensaver-dialog[5663]: gkr-pam: unlocked login keyring
+ago 20 00:43:29 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating service name='org.gnome.Nautilus' requested by ':1.18' (uid=1000 pid=4199 comm="/usr/bin/gnome-shell " label="unconfined")
+ago 20 00:43:29 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gnome.Nautilus'
+ago 20 00:43:31 Jezreel dbus-daemon[824]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.122' (uid=1000 pid=5702 comm="/usr/bin/nautilus --gapplication-service " label="unconfined")
+ago 20 00:43:31 Jezreel systemd[1]: Starting Hostname Service...
+-- Subject: Unit systemd-hostnamed.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit systemd-hostnamed.service has begun starting up.
+ago 20 00:43:31 Jezreel dbus-daemon[824]: [system] Successfully activated service 'org.freedesktop.hostname1'
+ago 20 00:43:31 Jezreel systemd[1]: Started Hostname Service.
+-- Subject: Unit systemd-hostnamed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit systemd-hostnamed.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:43:31 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mCalled "net usershare info" but it failed: Failed to execute child process “net” (No such file or directory)[0m
+ago 20 00:43:36 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mJS ERROR: Exception in callback for signal: position-changed: TypeError: this._rect is null[0m
+                                           [0;1;39mgetCurrentRect@resource:///org/gnome/shell/ui/keyboard.js:561:22[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_onFocusPositionChanged@resource:///org/gnome/shell/ui/keyboard.js:643:20[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_emit@resource:///org/gnome/gjs/modules/signals.js:128:27[0m
+                                           [0;1;39m_setCurrentWindow/this._currentWindowPositionId<@resource:///org/gnome/shell/ui/keyboard.js:535:21[0m
+ago 20 00:43:36 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mJS ERROR: Exception in callback for signal: position-changed: TypeError: this._rect is null[0m
+                                           [0;1;39mgetCurrentRect@resource:///org/gnome/shell/ui/keyboard.js:561:22[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_onFocusPositionChanged@resource:///org/gnome/shell/ui/keyboard.js:643:20[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_emit@resource:///org/gnome/gjs/modules/signals.js:128:27[0m
+                                           [0;1;39m_setCurrentWindow/this._currentWindowPositionId<@resource:///org/gnome/shell/ui/keyboard.js:535:21[0m
+ago 20 00:43:42 Jezreel gvfsd-metadata[4512]: [0;1;39m[0;1;31m[0;1;39mg_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed[0m
+ago 20 00:43:42 Jezreel gvfsd-metadata[4512]: [0;1;39m[0;1;31m[0;1;39mg_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed[0m
+ago 20 00:43:42 Jezreel gvfsd-metadata[4512]: [0;1;39m[0;1;31m[0;1;39mg_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed[0m
+ago 20 00:43:42 Jezreel gvfsd-metadata[4512]: [0;1;39m[0;1;31m[0;1;39mg_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed[0m
+ago 20 00:43:42 Jezreel gvfsd-metadata[4512]: [0;1;39m[0;1;31m[0;1;39mg_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed[0m
+ago 20 00:43:42 Jezreel gvfsd-metadata[4512]: [0;1;39m[0;1;31m[0;1;39mg_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed[0m
+ago 20 00:43:42 Jezreel gvfsd-metadata[4512]: [0;1;39m[0;1;31m[0;1;39mg_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed[0m
+ago 20 00:43:42 Jezreel gvfsd-metadata[4512]: [0;1;39m[0;1;31m[0;1;39mg_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed[0m
+ago 20 00:43:51 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mCalled "net usershare info" but it failed: Failed to execute child process “net” (No such file or directory)[0m
+ago 20 00:44:21 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mCalled "net usershare info" but it failed: Failed to execute child process “net” (No such file or directory)[0m
+ago 20 00:45:01 Jezreel CRON[5798]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 00:45:01 Jezreel CRON[5799]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+ago 20 00:45:01 Jezreel CRON[5798]: pam_unix(cron:session): session closed for user root
+ago 20 00:45:37 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Attempting to re-register :1.54/org/ayatana/NotificationItem/clipit; resetting instead[0m
+ago 20 00:45:37 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Item :1.54/org/ayatana/NotificationItem/clipit is already registered[0m
+ago 20 00:49:05 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mSome code accessed the property 'discreteGpuAvailable' on the module 'appDisplay'. That property was defined with 'let' or 'const' inside the module. This was previously supported, but is not correct according to the ES6 standard. Any symbols to be exported from a module must be defined with 'var'. The property access will work as previously for the time being, but please fix your code anyway.[0m
+ago 20 00:49:05 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mSome code accessed the property 'WindowPreviewMenuItem' on the module 'windowPreview'. That property was defined with 'let' or 'const' inside the module. This was previously supported, but is not correct according to the ES6 standard. Any symbols to be exported from a module must be defined with 'var'. The property access will work as previously for the time being, but please fix your code anyway.[0m
+ago 20 00:49:08 Jezreel dbus-daemon[824]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.122' (uid=1000 pid=5702 comm="/usr/bin/nautilus --gapplication-service " label="unconfined")
+ago 20 00:49:08 Jezreel systemd[1]: Starting Hostname Service...
+-- Subject: Unit systemd-hostnamed.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit systemd-hostnamed.service has begun starting up.
+ago 20 00:49:08 Jezreel dbus-daemon[824]: [system] Successfully activated service 'org.freedesktop.hostname1'
+ago 20 00:49:08 Jezreel systemd[1]: Started Hostname Service.
+-- Subject: Unit systemd-hostnamed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit systemd-hostnamed.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:49:24 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mCalled "net usershare info" but it failed: Failed to execute child process “net” (No such file or directory)[0m
+ago 20 00:51:59 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_key_file_load_from_file: assertion 'file != NULL' failed[0m
+ago 20 00:51:59 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mCould not establish a connection to Tracker: Failed to load SPARQL backend: Key file does not have group “DomainOntology”[0m
+ago 20 00:52:00 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 00:52:00 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 00:52:00 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 00:52:01 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 00:52:07 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 00:52:11 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_foreach: assertion 'queue != NULL' failed[0m
+ago 20 00:52:11 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_free: assertion 'queue != NULL' failed[0m
+ago 20 00:52:11 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_foreach: assertion 'queue != NULL' failed[0m
+ago 20 00:52:11 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_free: assertion 'queue != NULL' failed[0m
+ago 20 00:52:11 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mCalled "net usershare info" but it failed: Failed to execute child process “net” (No such file or directory)[0m
+ago 20 00:52:17 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 00:52:17 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 00:52:17 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 00:52:17 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 00:52:18 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 00:52:20 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 00:52:31 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 00:52:36 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_foreach: assertion 'queue != NULL' failed[0m
+ago 20 00:52:36 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_free: assertion 'queue != NULL' failed[0m
+ago 20 00:52:36 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_foreach: assertion 'queue != NULL' failed[0m
+ago 20 00:52:36 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_free: assertion 'queue != NULL' failed[0m
+ago 20 00:52:36 Jezreel gvfsd-metadata[4512]: [0;1;39m[0;1;31m[0;1;39mg_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed[0m
+ago 20 00:52:36 Jezreel gvfsd-metadata[4512]: [0;1;39m[0;1;31m[0;1;39mg_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed[0m
+ago 20 00:52:36 Jezreel gvfsd-metadata[4512]: [0;1;39m[0;1;31m[0;1;39mg_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed[0m
+ago 20 00:52:36 Jezreel gvfsd-metadata[4512]: [0;1;39m[0;1;31m[0;1;39mg_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed[0m
+ago 20 00:52:36 Jezreel gvfsd-metadata[4512]: [0;1;39m[0;1;31m[0;1;39mg_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed[0m
+ago 20 00:52:36 Jezreel gvfsd-metadata[4512]: [0;1;39m[0;1;31m[0;1;39mg_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed[0m
+ago 20 00:52:36 Jezreel gvfsd-metadata[4512]: [0;1;39m[0;1;31m[0;1;39mg_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed[0m
+ago 20 00:52:36 Jezreel gvfsd-metadata[4512]: [0;1;39m[0;1;31m[0;1;39mg_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed[0m
+ago 20 00:52:45 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 00:52:45 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 00:52:48 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 00:52:53 Jezreel systemd[1]: proc-sys-fs-binfmt_misc.automount: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 6166 (nautilus)
+ago 20 00:52:53 Jezreel systemd[1]: Mounting Arbitrary Executable File Formats File System...
+-- Subject: Unit proc-sys-fs-binfmt_misc.mount has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit proc-sys-fs-binfmt_misc.mount has begun starting up.
+ago 20 00:52:53 Jezreel systemd[1]: Mounted Arbitrary Executable File Formats File System.
+-- Subject: Unit proc-sys-fs-binfmt_misc.mount has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit proc-sys-fs-binfmt_misc.mount has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:53:08 Jezreel kernel: perf: interrupt took too long (2536 > 2500), lowering kernel.perf_event_max_sample_rate to 78750
+ago 20 00:53:09 Jezreel ntfs-3g[4796]: [0;1;39m[0;1;31m[0;1;39mntfs_mst_post_read_fixup_warn: magic: 0x6d783f3c  size: 4096   usa_ofs: 8300  usa_count: 25974: Invalid argument[0m
+ago 20 00:53:09 Jezreel ntfs-3g[4796]: [0;1;39m[0;1;31m[0;1;39mActual VCN (0x6f636e652022302e) of index buffer is different from expected VCN (0x0) in inode 0x11.[0m
+ago 20 00:55:01 Jezreel CRON[6242]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 00:55:01 Jezreel CRON[6243]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+ago 20 00:55:01 Jezreel CRON[6242]: pam_unix(cron:session): session closed for user root
+ago 20 00:55:29 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mCalled "net usershare info" but it failed: Failed to execute child process “net” (No such file or directory)[0m
+ago 20 00:55:47 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Attempting to re-register :1.54/org/ayatana/NotificationItem/clipit; resetting instead[0m
+ago 20 00:55:47 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Item :1.54/org/ayatana/NotificationItem/clipit is already registered[0m
+ago 20 00:55:56 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating via systemd: service name='org.gnome.Terminal' unit='gnome-terminal-server.service' requested by ':1.77' (uid=1000 pid=5702 comm="/usr/bin/nautilus --gapplication-service " label="unconfined")
+ago 20 00:55:56 Jezreel systemd[4026]: Starting GNOME Terminal Server...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has begun starting up.
+ago 20 00:55:56 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gnome.Terminal'
+ago 20 00:55:56 Jezreel systemd[4026]: Started GNOME Terminal Server.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 00:56:21 Jezreel sudo[6307]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/0 ; PWD=/etc/apache2/sites-available ; USER=root ; COMMAND=/bin/cp 000-default.conf djangoargon.conf[0m
+ago 20 00:56:21 Jezreel sudo[6307]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 00:56:21 Jezreel sudo[6307]: pam_unix(sudo:session): session closed for user root
+ago 20 00:56:56 Jezreel sudo[6321]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/0 ; PWD=/etc/apache2/sites-available ; USER=root ; COMMAND=/bin/nano djangoargon.conf[0m
+ago 20 00:56:56 Jezreel sudo[6321]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 01:01:18 Jezreel systemd[1]: Started Run anacron jobs.
+-- Subject: Unit anacron.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit anacron.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 01:01:18 Jezreel anacron[6443]: [0;1;39m[0;1;31m[0;1;39mAnacron 2.3 started on 2020-08-20[0m
+ago 20 01:01:18 Jezreel anacron[6443]: [0;1;39m[0;1;31m[0;1;39mNormal exit (0 jobs run)[0m
+ago 20 01:05:01 Jezreel CRON[6530]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 01:05:01 Jezreel CRON[6531]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+ago 20 01:05:01 Jezreel CRON[6530]: pam_unix(cron:session): session closed for user root
+ago 20 01:09:01 Jezreel CRON[6633]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 01:09:01 Jezreel CRON[6634]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+ago 20 01:09:01 Jezreel CRON[6633]: pam_unix(cron:session): session closed for user root
+ago 20 01:09:17 Jezreel systemd[1]: Starting Clean php session files...
+-- Subject: Unit phpsessionclean.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit phpsessionclean.service has begun starting up.
+ago 20 01:09:17 Jezreel sessionclean[6638]: PHP Warning:  PHP Startup: Unable to load dynamic library 'openssl' (tried: /usr/lib/php/20190902/openssl (/usr/lib/php/20190902/openssl: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/openssl.so (/usr/lib/php/20190902/openssl.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+ago 20 01:09:17 Jezreel sessionclean[6638]: PHP Warning:  PHP Startup: Unable to load dynamic library 'xmlrpc' (tried: /usr/lib/php/20190902/xmlrpc (/usr/lib/php/20190902/xmlrpc: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/xmlrpc.so (/usr/lib/php/20190902/xmlrpc.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+ago 20 01:09:17 Jezreel sessionclean[6638]: PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+ago 20 01:09:17 Jezreel sessionclean[6638]: PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+ago 20 01:09:17 Jezreel sessionclean[6638]: PHP Warning:  PHP Startup: Unable to load dynamic library 'intl' (tried: /usr/lib/php/20170718/intl (/usr/lib/php/20170718/intl: cannot open shared object file: No such file or directory), /usr/lib/php/20170718/intl.so (/usr/lib/php/20170718/intl.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+ago 20 01:09:17 Jezreel systemd[1]: Started Clean php session files.
+-- Subject: Unit phpsessionclean.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit phpsessionclean.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 01:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-colord.service-nGhZrx: Error opening directory '/var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-colord.service-nGhZrx': Permission denied[0m
+ago 20 01:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-fwupd.service-RT34iC: Error opening directory '/var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-fwupd.service-RT34iC': Permission denied[0m
+ago 20 01:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-apache2.service-TnudsB: Error opening directory '/var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-apache2.service-TnudsB': Permission denied[0m
+ago 20 01:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-bolt.service-lmCDFO: Error opening directory '/var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-bolt.service-lmCDFO': Permission denied[0m
+ago 20 01:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-ModemManager.service-F0U2YJ: Error opening directory '/var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-ModemManager.service-F0U2YJ': Permission denied[0m
+ago 20 01:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-rtkit-daemon.service-3TzlIR: Error opening directory '/var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-rtkit-daemon.service-3TzlIR': Permission denied[0m
+ago 20 01:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-systemd-resolved.service-DBjQ5k: Error opening directory '/var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-systemd-resolved.service-DBjQ5k': Permission denied[0m
+ago 20 01:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-colord.service-qSVIJm: Error opening directory '/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-colord.service-qSVIJm': Permission denied[0m
+ago 20 01:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-fwupd.service-gZmlcT: Error opening directory '/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-fwupd.service-gZmlcT': Permission denied[0m
+ago 20 01:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-apache2.service-iPB7US: Error opening directory '/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-apache2.service-iPB7US': Permission denied[0m
+ago 20 01:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-bolt.service-41kYb3: Error opening directory '/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-bolt.service-41kYb3': Permission denied[0m
+ago 20 01:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-ModemManager.service-QO3y7n: Error opening directory '/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-ModemManager.service-QO3y7n': Permission denied[0m
+ago 20 01:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-rtkit-daemon.service-2HSgAJ: Error opening directory '/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-rtkit-daemon.service-2HSgAJ': Permission denied[0m
+ago 20 01:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-systemd-resolved.service-mRea26: Error opening directory '/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-systemd-resolved.service-mRea26': Permission denied[0m
+ago 20 01:13:07 Jezreel gnome-screensav[4184]: [0;1;39m[0;1;31m[0;1;39mSource ID 26 was not found when attempting to remove it[0m
+ago 20 01:15:01 Jezreel CRON[6891]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 01:15:01 Jezreel CRON[6892]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+ago 20 01:15:01 Jezreel CRON[6891]: pam_unix(cron:session): session closed for user root
+ago 20 01:15:25 Jezreel gnome-screensaver-dialog[6896]: gkr-pam: unlocked login keyring
+ago 20 01:15:25 Jezreel clipit-startup.desktop[4406]: Clipboard is null, recovering ...
+ago 20 01:17:01 Jezreel CRON[6956]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 01:17:01 Jezreel CRON[6958]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+ago 20 01:17:01 Jezreel CRON[6956]: pam_unix(cron:session): session closed for user root
+ago 20 01:17:52 Jezreel sudo[6977]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/0 ; PWD=/etc/apache2/sites-available ; USER=root ; COMMAND=/bin/nano djangoargon.conf[0m
+ago 20 01:17:52 Jezreel sudo[6977]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 01:18:00 Jezreel sudo[6977]: pam_unix(sudo:session): session closed for user root
+ago 20 01:20:29 Jezreel sudo[6321]: pam_unix(sudo:session): session closed for user root
+ago 20 01:20:47 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mSome code accessed the property 'WindowPreviewMenu' on the module 'windowPreview'. That property was defined with 'let' or 'const' inside the module. This was previously supported, but is not correct according to the ES6 standard. Any symbols to be exported from a module must be defined with 'var'. The property access will work as previously for the time being, but please fix your code anyway.[0m
+ago 20 01:20:54 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 01:20:54 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 01:20:54 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 01:20:55 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 01:21:13 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mg_queue_pop_head: assertion 'queue != NULL' failed[0m
+ago 20 01:25:01 Jezreel CRON[7205]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 01:25:01 Jezreel CRON[7206]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+ago 20 01:25:01 Jezreel CRON[7205]: pam_unix(cron:session): session closed for user root
+ago 20 01:29:20 Jezreel kernel: perf: interrupt took too long (3242 > 3170), lowering kernel.perf_event_max_sample_rate to 61500
+ago 20 01:29:36 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39mWindow manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x2e00084 (nano (/etc)[0m
+ago 20 01:31:54 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating service name='org.kde.kglobalaccel' requested by ':1.89' (uid=1000 pid=7402 comm="yakuake " label="unconfined")
+ago 20 01:31:54 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.kde.kglobalaccel'
+ago 20 01:31:54 Jezreel org.kde.yakuake.desktop[7402]: Invalid Context= "stock" line for icon theme:  "/usr/share/icons/ubuntu-mono-dark/stock/16/"
+ago 20 01:31:54 Jezreel org.kde.yakuake.desktop[7402]: Invalid Context= "stock" line for icon theme:  "/usr/share/icons/ubuntu-mono-dark/stock/22/"
+ago 20 01:31:54 Jezreel org.kde.yakuake.desktop[7402]: Invalid Context= "stock" line for icon theme:  "/usr/share/icons/ubuntu-mono-dark/stock/24/"
+ago 20 01:31:54 Jezreel org.kde.yakuake.desktop[7402]: Invalid Context= "stock" line for icon theme:  "/usr/share/icons/ubuntu-mono-dark/stock/32/"
+ago 20 01:31:54 Jezreel org.kde.yakuake.desktop[7402]: Invalid Context= "stock" line for icon theme:  "/usr/share/icons/ubuntu-mono-dark/stock/48/"
+ago 20 01:31:54 Jezreel org.kde.yakuake.desktop[7402]: Invalid Context= "stock" line for icon theme:  "/usr/share/icons/ubuntu-mono-dark/stock/64/"
+ago 20 01:31:54 Jezreel org.kde.yakuake.desktop[7402]: Invalid Context= "stock" line for icon theme:  "/usr/share/icons/ubuntu-mono-dark/stock/128/"
+ago 20 01:31:55 Jezreel org.kde.yakuake.desktop[7402]: QDBusConnection: name 'org.kde.kglobalaccel' had owner '' but we thought it was ':1.91'
+ago 20 01:31:55 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mJS WARNING: [resource:///org/gnome/shell/ui/notificationDaemon.js 121]: reference to undefined property "image-path"[0m
+ago 20 01:32:24 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Attempting to re-register :1.54/org/ayatana/NotificationItem/clipit; resetting instead[0m
+ago 20 01:32:24 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Item :1.54/org/ayatana/NotificationItem/clipit is already registered[0m
+ago 20 01:34:11 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Attempting to re-register :1.54/org/ayatana/NotificationItem/clipit; resetting instead[0m
+ago 20 01:34:11 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Item :1.54/org/ayatana/NotificationItem/clipit is already registered[0m
+ago 20 01:35:01 Jezreel CRON[7536]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 01:35:01 Jezreel CRON[7537]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+ago 20 01:35:01 Jezreel CRON[7536]: pam_unix(cron:session): session closed for user root
+ago 20 01:38:25 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Attempting to re-register :1.54/org/ayatana/NotificationItem/clipit; resetting instead[0m
+ago 20 01:38:25 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Item :1.54/org/ayatana/NotificationItem/clipit is already registered[0m
+ago 20 01:39:01 Jezreel CRON[7640]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 01:39:01 Jezreel CRON[7641]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+ago 20 01:39:01 Jezreel CRON[7640]: pam_unix(cron:session): session closed for user root
+ago 20 01:39:18 Jezreel systemd[1]: Starting Clean php session files...
+-- Subject: Unit phpsessionclean.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit phpsessionclean.service has begun starting up.
+ago 20 01:39:18 Jezreel sessionclean[7645]: PHP Warning:  PHP Startup: Unable to load dynamic library 'openssl' (tried: /usr/lib/php/20190902/openssl (/usr/lib/php/20190902/openssl: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/openssl.so (/usr/lib/php/20190902/openssl.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+ago 20 01:39:18 Jezreel sessionclean[7645]: PHP Warning:  PHP Startup: Unable to load dynamic library 'xmlrpc' (tried: /usr/lib/php/20190902/xmlrpc (/usr/lib/php/20190902/xmlrpc: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/xmlrpc.so (/usr/lib/php/20190902/xmlrpc.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+ago 20 01:39:18 Jezreel sessionclean[7645]: PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+ago 20 01:39:18 Jezreel sessionclean[7645]: PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+ago 20 01:39:18 Jezreel sessionclean[7645]: PHP Warning:  PHP Startup: Unable to load dynamic library 'intl' (tried: /usr/lib/php/20170718/intl (/usr/lib/php/20170718/intl: cannot open shared object file: No such file or directory), /usr/lib/php/20170718/intl.so (/usr/lib/php/20170718/intl.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+ago 20 01:39:19 Jezreel systemd[1]: Started Clean php session files.
+-- Subject: Unit phpsessionclean.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit phpsessionclean.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 01:39:47 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Attempting to re-register :1.54/org/ayatana/NotificationItem/clipit; resetting instead[0m
+ago 20 01:39:47 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Item :1.54/org/ayatana/NotificationItem/clipit is already registered[0m
+ago 20 01:41:44 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Attempting to re-register :1.54/org/ayatana/NotificationItem/clipit; resetting instead[0m
+ago 20 01:41:44 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Item :1.54/org/ayatana/NotificationItem/clipit is already registered[0m
+ago 20 01:42:07 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Attempting to re-register :1.54/org/ayatana/NotificationItem/clipit; resetting instead[0m
+ago 20 01:42:07 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Item :1.54/org/ayatana/NotificationItem/clipit is already registered[0m
+ago 20 01:43:43 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Attempting to re-register :1.54/org/ayatana/NotificationItem/clipit; resetting instead[0m
+ago 20 01:43:43 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Item :1.54/org/ayatana/NotificationItem/clipit is already registered[0m
+ago 20 01:44:37 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Attempting to re-register :1.54/org/ayatana/NotificationItem/clipit; resetting instead[0m
+ago 20 01:44:37 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Item :1.54/org/ayatana/NotificationItem/clipit is already registered[0m
+ago 20 01:44:41 Jezreel dbus-daemon[824]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.133' (uid=1000 pid=7329 comm="gedit nano djangoargon.conf " label="unconfined")
+ago 20 01:44:41 Jezreel systemd[1]: Starting Hostname Service...
+-- Subject: Unit systemd-hostnamed.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit systemd-hostnamed.service has begun starting up.
+ago 20 01:44:41 Jezreel dbus-daemon[824]: [system] Successfully activated service 'org.freedesktop.hostname1'
+ago 20 01:44:41 Jezreel systemd[1]: Started Hostname Service.
+-- Subject: Unit systemd-hostnamed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit systemd-hostnamed.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 01:45:01 Jezreel CRON[7895]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 01:45:01 Jezreel CRON[7896]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+ago 20 01:45:01 Jezreel CRON[7895]: pam_unix(cron:session): session closed for user root
+ago 20 01:45:08 Jezreel sudo[7899]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=cpalacios rhost=  user=cpalacios[0m
+ago 20 01:45:14 Jezreel sudo[7899]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/0 ; PWD=/etc/apache2/sites-available ; USER=root ; COMMAND=/usr/bin/gedit djangoargon.conf[0m
+ago 20 01:45:14 Jezreel sudo[7899]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 01:45:15 Jezreel dbus-daemon[7912]: [session uid=0 pid=7910] AppArmor D-Bus mediation is enabled
+ago 20 01:45:15 Jezreel dbus-daemon[7912]: [session uid=0 pid=7910] Activating service name='org.freedesktop.portal.Desktop' requested by ':1.0' (uid=0 pid=7905 comm="gedit djangoargon.conf " label="unconfined")
+ago 20 01:45:15 Jezreel dbus-daemon[7912]: [session uid=0 pid=7910] Activating service name='org.freedesktop.portal.Documents' requested by ':1.1' (uid=0 pid=7914 comm="/usr/libexec/xdg-desktop-portal " label="unconfined")
+ago 20 01:45:15 Jezreel dbus-daemon[7912]: [session uid=0 pid=7910] Activating service name='org.freedesktop.impl.portal.PermissionStore' requested by ':1.2' (uid=0 pid=7919 comm="/usr/libexec/xdg-document-portal " label="unconfined")
+ago 20 01:45:15 Jezreel dbus-daemon[7912]: [session uid=0 pid=7910] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+ago 20 01:45:15 Jezreel dbus-daemon[7912]: [session uid=0 pid=7910] Successfully activated service 'org.freedesktop.portal.Documents'
+ago 20 01:45:15 Jezreel dbus-daemon[7912]: [session uid=0 pid=7910] Activating service name='org.freedesktop.impl.portal.desktop.gtk' requested by ':1.1' (uid=0 pid=7914 comm="/usr/libexec/xdg-desktop-portal " label="unconfined")
+ago 20 01:45:15 Jezreel dbus-daemon[7912]: [session uid=0 pid=7910] Activating service name='org.gtk.vfs.Daemon' requested by ':1.4' (uid=0 pid=7934 comm="/usr/libexec/xdg-desktop-portal-gtk " label="unconfined")
+ago 20 01:45:15 Jezreel dbus-daemon[7912]: [session uid=0 pid=7910] Successfully activated service 'org.gtk.vfs.Daemon'
+ago 20 01:45:15 Jezreel dbus-daemon[7912]: [session uid=0 pid=7910] Successfully activated service 'org.freedesktop.impl.portal.desktop.gtk'
+ago 20 01:45:15 Jezreel dbus-daemon[7912]: [session uid=0 pid=7910] Successfully activated service 'org.freedesktop.portal.Desktop'
+ago 20 01:45:15 Jezreel dbus-daemon[7912]: [session uid=0 pid=7910] Activating service name='ca.desrt.dconf' requested by ':1.0' (uid=0 pid=7905 comm="gedit djangoargon.conf " label="unconfined")
+ago 20 01:45:15 Jezreel dbus-daemon[7912]: [session uid=0 pid=7910] Successfully activated service 'ca.desrt.dconf'
+ago 20 01:45:16 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39mWindow manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x3a00084 (djangoargo)[0m
+ago 20 01:45:17 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 01:45:19 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mError getting permissions: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for inhibit[0m
+ago 20 01:45:19 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mBackend call failed: GDBus.Error:org.freedesktop.portal.Error.Failed: Inhibiting other than idle not supported[0m
+ago 20 01:45:22 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 01:46:51 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mError getting permissions: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for inhibit[0m
+ago 20 01:46:51 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mBackend call failed: GDBus.Error:org.freedesktop.portal.Error.Failed: Inhibiting other than idle not supported[0m
+ago 20 01:47:06 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 01:47:27 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 01:47:51 Jezreel sudo[8033]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/usr/sbin/a2ensite djangoargon.conf[0m
+ago 20 01:47:51 Jezreel sudo[8033]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 01:47:51 Jezreel sudo[8033]: pam_unix(sudo:session): session closed for user root
+ago 20 01:47:58 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Attempting to re-register :1.54/org/ayatana/NotificationItem/clipit; resetting instead[0m
+ago 20 01:47:58 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Item :1.54/org/ayatana/NotificationItem/clipit is already registered[0m
+ago 20 01:48:00 Jezreel polkitd(authority=local)[924]: [0;1;39m[0;1;31m[0;1;39mRegistered Authentication Agent for unix-process:8043:953645 (system bus name :1.138 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)[0m
+ago 20 01:48:03 Jezreel polkitd(authority=local)[924]: [0;1;39m[0;1;31m[0;1;39mOperator of unix-session:c2 successfully authenticated as unix-user:cpalacios to gain TEMPORARY authorization for action org.freedesktop.systemd1.manage-units for system-bus-name::1.139 [systemctl reload apache2] (owned by unix-user:cpalacios)[0m
+ago 20 01:48:03 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 01:48:04 Jezreel apachectl[8054]: AH00526: Syntax error on line 32 of /etc/apache2/sites-enabled/djangoargon.conf:
+ago 20 01:48:04 Jezreel apachectl[8054]: Invalid command 'WSGIDaemonProcess', perhaps misspelled or defined by a module not included in the server configuration
+ago 20 01:48:04 Jezreel apachectl[8054]: Action 'graceful' failed.
+ago 20 01:48:04 Jezreel apachectl[8054]: The Apache error log may have more information.
+ago 20 01:48:04 Jezreel systemd[1]: [0;1;39m[0;1;31m[0;1;39mapache2.service: Control process exited, code=exited status=1[0m
+ago 20 01:48:04 Jezreel systemd[1]: [0;1;31m[0;1;39m[0;1;31mReload failed for The Apache HTTP Server.[0m
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 01:48:04 Jezreel polkitd(authority=local)[924]: [0;1;39m[0;1;31m[0;1;39mUnregistered Authentication Agent for unix-process:8043:953645 (system bus name :1.138, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)[0m
+ago 20 01:50:16 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mError getting permissions: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for inhibit[0m
+ago 20 01:50:16 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mBackend call failed: GDBus.Error:org.freedesktop.portal.Error.Failed: Inhibiting other than idle not supported[0m
+ago 20 01:50:22 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 01:50:23 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 01:50:34 Jezreel polkitd(authority=local)[924]: [0;1;39m[0;1;31m[0;1;39mRegistered Authentication Agent for unix-process:8129:969082 (system bus name :1.142 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)[0m
+ago 20 01:50:37 Jezreel polkitd(authority=local)[924]: [0;1;39m[0;1;31m[0;1;39mOperator of unix-session:c2 successfully authenticated as unix-user:cpalacios to gain TEMPORARY authorization for action org.freedesktop.systemd1.manage-units for system-bus-name::1.143 [systemctl reload apache2] (owned by unix-user:cpalacios)[0m
+ago 20 01:50:37 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 01:50:38 Jezreel apachectl[8139]: AH00526: Syntax error on line 32 of /etc/apache2/sites-enabled/djangoargon.conf:
+ago 20 01:50:38 Jezreel apachectl[8139]: Invalid command 'WSGIDaemonProcess', perhaps misspelled or defined by a module not included in the server configuration
+ago 20 01:50:38 Jezreel apachectl[8139]: Action 'graceful' failed.
+ago 20 01:50:38 Jezreel apachectl[8139]: The Apache error log may have more information.
+ago 20 01:50:38 Jezreel systemd[1]: [0;1;39m[0;1;31m[0;1;39mapache2.service: Control process exited, code=exited status=1[0m
+ago 20 01:50:38 Jezreel systemd[1]: [0;1;31m[0;1;39m[0;1;31mReload failed for The Apache HTTP Server.[0m
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 01:50:38 Jezreel polkitd(authority=local)[924]: [0;1;39m[0;1;31m[0;1;39mUnregistered Authentication Agent for unix-process:8129:969082 (system bus name :1.142, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)[0m
+ago 20 01:53:42 Jezreel sudo[8239]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/usr/sbin/a2dissite djangoargon.conf[0m
+ago 20 01:53:42 Jezreel sudo[8239]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 01:53:42 Jezreel sudo[8239]: pam_unix(sudo:session): session closed for user root
+ago 20 01:53:54 Jezreel polkitd(authority=local)[924]: [0;1;39m[0;1;31m[0;1;39mRegistered Authentication Agent for unix-process:8249:989096 (system bus name :1.146 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)[0m
+ago 20 01:53:58 Jezreel polkitd(authority=local)[924]: [0;1;39m[0;1;31m[0;1;39mOperator of unix-session:c2 successfully authenticated as unix-user:cpalacios to gain TEMPORARY authorization for action org.freedesktop.systemd1.manage-units for system-bus-name::1.147 [systemctl reload apache2] (owned by unix-user:cpalacios)[0m
+ago 20 01:53:58 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 01:53:58 Jezreel apachectl[8259]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+ago 20 01:53:58 Jezreel systemd[1]: Reloaded The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 01:53:58 Jezreel polkitd(authority=local)[924]: [0;1;39m[0;1;31m[0;1;39mUnregistered Authentication Agent for unix-process:8249:989096 (system bus name :1.146, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)[0m
+ago 20 01:54:12 Jezreel sudo[8272]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/usr/sbin/a2ensite djangoargon.conf[0m
+ago 20 01:54:12 Jezreel sudo[8272]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 01:54:12 Jezreel sudo[8272]: pam_unix(sudo:session): session closed for user root
+ago 20 01:54:20 Jezreel sudo[8293]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+ago 20 01:54:20 Jezreel sudo[8293]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 01:54:20 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 01:54:20 Jezreel apachectl[8296]: AH00526: Syntax error on line 32 of /etc/apache2/sites-enabled/djangoargon.conf:
+ago 20 01:54:20 Jezreel apachectl[8296]: Invalid command 'WSGIDaemonProcess', perhaps misspelled or defined by a module not included in the server configuration
+ago 20 01:54:20 Jezreel apachectl[8296]: Action 'graceful' failed.
+ago 20 01:54:20 Jezreel apachectl[8296]: The Apache error log may have more information.
+ago 20 01:54:20 Jezreel systemd[1]: [0;1;39m[0;1;31m[0;1;39mapache2.service: Control process exited, code=exited status=1[0m
+ago 20 01:54:20 Jezreel systemd[1]: [0;1;31m[0;1;39m[0;1;31mReload failed for The Apache HTTP Server.[0m
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 01:54:20 Jezreel sudo[8293]: pam_unix(sudo:session): session closed for user root
+ago 20 01:55:01 Jezreel CRON[8318]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 01:55:01 Jezreel CRON[8319]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+ago 20 01:55:01 Jezreel CRON[8318]: pam_unix(cron:session): session closed for user root
+ago 20 01:57:46 Jezreel kernel: usb 1-3: new high-speed USB device number 5 using xhci_hcd
+ago 20 01:57:46 Jezreel kernel: usb 1-3: New USB device found, idVendor=2717, idProduct=ff40, bcdDevice= 3.18
+ago 20 01:57:46 Jezreel kernel: usb 1-3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+ago 20 01:57:46 Jezreel kernel: usb 1-3: Product: Android
+ago 20 01:57:46 Jezreel kernel: usb 1-3: Manufacturer: Android
+ago 20 01:57:46 Jezreel kernel: usb 1-3: SerialNumber: 67592a17
+ago 20 01:57:47 Jezreel upowerd[1387]: [0;1;39m[0;1;31m[0;1;39munhandled action 'bind' on /sys/devices/pci0000:00/0000:00:14.0/usb1/1-3[0m
+ago 20 01:57:47 Jezreel gvfsd[4141]: Device 0 (VID=2717 and PID=ff40) is a Xiaomi Mi-2s (id2) (MTP).
+ago 20 01:57:50 Jezreel gvfsd[4141]: Error 1: Get Storage information failed.
+ago 20 01:57:50 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating service name='org.gnome.Shell.HotplugSniffer' requested by ':1.18' (uid=1000 pid=4199 comm="/usr/bin/gnome-shell " label="unconfined")
+ago 20 01:57:51 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gnome.Shell.HotplugSniffer'
+ago 20 01:58:30 Jezreel kernel: usb 1-3: USB disconnect, device number 5
+ago 20 01:58:30 Jezreel gvfsd[4141]: PTP: reading event an error 0x05 occurred
+ago 20 01:58:30 Jezreel upowerd[1387]: [0;1;39m[0;1;31m[0;1;39munhandled action 'unbind' on /sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0[0m
+ago 20 01:58:30 Jezreel upowerd[1387]: [0;1;39m[0;1;31m[0;1;39munhandled action 'unbind' on /sys/devices/pci0000:00/0000:00:14.0/usb1/1-3[0m
+ago 20 01:58:31 Jezreel kernel: usb 1-3: new high-speed USB device number 6 using xhci_hcd
+ago 20 01:58:31 Jezreel kernel: usb 1-3: New USB device found, idVendor=2717, idProduct=ff80, bcdDevice= 3.18
+ago 20 01:58:31 Jezreel kernel: usb 1-3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+ago 20 01:58:31 Jezreel kernel: usb 1-3: Product: Android
+ago 20 01:58:31 Jezreel kernel: usb 1-3: Manufacturer: Android
+ago 20 01:58:31 Jezreel kernel: usb 1-3: SerialNumber: 67592a17
+ago 20 01:58:31 Jezreel mtp-probe[8441]: checking bus 1, device 6: "/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3"
+ago 20 01:58:31 Jezreel mtp-probe[8441]: bus: 1, device: 6 was not an MTP device
+ago 20 01:58:31 Jezreel kernel: usbcore: registered new interface driver cdc_ether
+ago 20 01:58:31 Jezreel gvfsd[4141]: Android device detected, assigning default bug flags
+ago 20 01:58:31 Jezreel gvfsd[4141]: Received event PTP_EC_DevicePropChanged in session 1
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.4854] manager: (usb0): new Ethernet device (/org/freedesktop/NetworkManager/Devices/4)
+ago 20 01:58:31 Jezreel kernel: rndis_host 1-3:1.0 usb0: register 'rndis_host' at usb-0000:00:14.0-3, RNDIS device, a2:79:3d:b8:64:48
+ago 20 01:58:31 Jezreel kernel: usbcore: registered new interface driver rndis_host
+ago 20 01:58:31 Jezreel upowerd[1387]: [0;1;39m[0;1;31m[0;1;39munhandled action 'bind' on /sys/devices/pci0000:00/0000:00:14.0/usb1/1-3[0m
+ago 20 01:58:31 Jezreel upowerd[1387]: [0;1;39m[0;1;31m[0;1;39munhandled action 'bind' on /sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.1[0m
+ago 20 01:58:31 Jezreel systemd-udevd[8445]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+ago 20 01:58:31 Jezreel kernel: rndis_host 1-3:1.0 enp0s20u3: renamed from usb0
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.5937] devices added (path: /sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/net/enp0s20u3, iface: enp0s20u3)
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.5937] device added (path: /sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/net/enp0s20u3, iface: enp0s20u3): no ifupdown configuration found.
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.5946] device (enp0s20u3): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.5990] device (enp0s20u3): carrier: link connected
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.6050] keyfile: add connection in-memory (5b477990-a969-3143-b778-2b8857d73193,"Wired connection 6")
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.6064] settings: (enp0s20u3): created default wired connection 'Wired connection 6'
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.6095] device (enp0s20u3): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'managed')
+ago 20 01:58:31 Jezreel upowerd[1387]: [0;1;39m[0;1;31m[0;1;39munhandled action 'bind' on /sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0[0m
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.6353] policy: auto-activating connection 'Wired connection 6'
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.6521] device (enp0s20u3): Activation: starting connection 'Wired connection 6' (5b477990-a969-3143-b778-2b8857d73193)
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.6646] device (enp0s20u3): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.6654] manager: NetworkManager state is now CONNECTING
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.6715] device (enp0s20u3): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.6785] device (enp0s20u3): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.6804] dhcp4 (enp0s20u3): activation: beginning transaction (timeout in 45 seconds)
+ago 20 01:58:31 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mJS WARNING: [resource:///org/gnome/shell/ui/status/network.js 97]: reference to undefined property 0[0m
+ago 20 01:58:31 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39mJS ERROR: TypeError: active.get_devices(...)[0] is undefined[0m
+                                           [0;1;39mensureActiveConnectionProps@resource:///org/gnome/shell/ui/status/network.js:97:22[0m
+                                           [0;1;39m_getMainConnection@resource:///org/gnome/shell/ui/status/network.js:1816:13[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+                                           [0;1;39m_syncMainConnection@resource:///org/gnome/shell/ui/status/network.js:1834:32[0m
+                                           [0;1;39mwrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22[0m
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.7614] dhcp4 (enp0s20u3): dhclient started with pid 8454
+ago 20 01:58:31 Jezreel avahi-daemon[887]: Joining mDNS multicast group on interface enp0s20u3.IPv6 with address fe80::2f65:c7e:e2a:a172.
+ago 20 01:58:31 Jezreel avahi-daemon[887]: New relevant interface enp0s20u3.IPv6 for mDNS.
+ago 20 01:58:31 Jezreel avahi-daemon[887]: Registering new address record for fe80::2f65:c7e:e2a:a172 on enp0s20u3.*.
+ago 20 01:58:31 Jezreel dhclient[8454]: DHCPDISCOVER on enp0s20u3 to 255.255.255.255 port 67 interval 3 (xid=0xd4477733)
+ago 20 01:58:31 Jezreel dhclient[8454]: DHCPREQUEST of 192.168.42.34 on enp0s20u3 to 255.255.255.255 port 67 (xid=0x337747d4)
+ago 20 01:58:31 Jezreel dhclient[8454]: DHCPOFFER of 192.168.42.34 from 192.168.42.129
+ago 20 01:58:31 Jezreel dhclient[8454]: DHCPACK of 192.168.42.34 from 192.168.42.129
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.9507] dhcp4 (enp0s20u3):   address 192.168.42.34
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.9517] dhcp4 (enp0s20u3):   plen 24 (255.255.255.0)
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.9525] dhcp4 (enp0s20u3):   gateway 192.168.42.129
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.9533] dhcp4 (enp0s20u3):   lease time 3600
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.9542] dhcp4 (enp0s20u3):   hostname 'Jezreel'
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.9547] dhcp4 (enp0s20u3):   nameserver '192.168.42.129'
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.9551] dhcp4 (enp0s20u3): state changed unknown -> bound
+ago 20 01:58:31 Jezreel avahi-daemon[887]: Joining mDNS multicast group on interface enp0s20u3.IPv4 with address 192.168.42.34.
+ago 20 01:58:31 Jezreel avahi-daemon[887]: New relevant interface enp0s20u3.IPv4 for mDNS.
+ago 20 01:58:31 Jezreel avahi-daemon[887]: Registering new address record for 192.168.42.34 on enp0s20u3.IPv4.
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.9694] device (enp0s20u3): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.9733] device (enp0s20u3): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.9750] device (enp0s20u3): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+ago 20 01:58:31 Jezreel NetworkManager[877]: <info>  [1597903111.9765] manager: NetworkManager state is now CONNECTED_LOCAL
+ago 20 01:58:32 Jezreel dhclient[8454]: bound to 192.168.42.34 -- renewal in 1692 seconds.
+ago 20 01:58:32 Jezreel NetworkManager[877]: <info>  [1597903112.0449] manager: NetworkManager state is now CONNECTED_SITE
+ago 20 01:58:32 Jezreel NetworkManager[877]: <info>  [1597903112.0455] policy: set 'Wired connection 6' (enp0s20u3) as default for IPv4 routing and DNS
+ago 20 01:58:32 Jezreel NetworkManager[877]: <info>  [1597903112.0477] device (enp0s20u3): Activation: successful, device activated.
+ago 20 01:58:32 Jezreel dbus-daemon[824]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.15' (uid=0 pid=877 comm="/usr/sbin/NetworkManager --no-daemon " label="unconfined")
+ago 20 01:58:32 Jezreel gsd-sharing[4300]: [0;1;39m[0;1;31m[0;1;39mFailed to StopUnit service: GDBus.Error:org.freedesktop.systemd1.NoSuchUnit: Unit gnome-user-share-webdav.service not loaded.[0m
+ago 20 01:58:32 Jezreel systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Unit NetworkManager-dispatcher.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit NetworkManager-dispatcher.service has begun starting up.
+ago 20 01:58:32 Jezreel gsd-sharing[4300]: [0;1;39m[0;1;31m[0;1;39mFailed to StopUnit service: GDBus.Error:org.freedesktop.systemd1.NoSuchUnit: Unit rygel.service not loaded.[0m
+ago 20 01:58:32 Jezreel gsd-sharing[4300]: [0;1;39m[0;1;31m[0;1;39mFailed to StopUnit service: GDBus.Error:org.freedesktop.systemd1.NoSuchUnit: Unit gnome-remote-desktop.service not loaded.[0m
+ago 20 01:58:32 Jezreel dbus-daemon[824]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+ago 20 01:58:32 Jezreel systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Unit NetworkManager-dispatcher.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit NetworkManager-dispatcher.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 01:58:32 Jezreel nm-dispatcher[8467]: req:1 'up' [enp0s20u3]: new request (1 scripts)
+ago 20 01:58:32 Jezreel nm-dispatcher[8467]: req:1 'up' [enp0s20u3]: start running ordered scripts...
+ago 20 01:58:32 Jezreel systemd-resolved[667]: [0;1;39m[0;1;31m[0;1;39mServer returned error NXDOMAIN, mitigating potential DNS violation DVE-2018-0001, retrying transaction with reduced feature level UDP.[0m
+ago 20 01:58:32 Jezreel systemd-resolved[667]: [0;1;39m[0;1;31m[0;1;39mServer returned error NXDOMAIN, mitigating potential DNS violation DVE-2018-0001, retrying transaction with reduced feature level UDP.[0m
+ago 20 01:58:33 Jezreel sudo[8520]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/usr/bin/apt-get install libapache2-mod-wsgi[0m
+ago 20 01:58:33 Jezreel sudo[8520]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 01:58:34 Jezreel ModemManager[875]: <info>  Couldn't check support for device '/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3': not supported by any plugin
+ago 20 01:58:44 Jezreel libapache2-mod-wsgi[8590]: apache2_invoke: Enable module wsgi
+ago 20 01:58:44 Jezreel systemd[1]: Reloading.
+ago 20 01:58:45 Jezreel systemd[1]: Stopping The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun shutting down.
+ago 20 01:58:45 Jezreel apachectl[8626]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+ago 20 01:58:45 Jezreel systemd[1]: [0;1;39m[0;1;31m[0;1;39mapache2.service: Failed with result 'exit-code'.[0m
+ago 20 01:58:45 Jezreel systemd[1]: Stopped The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished shutting down.
+ago 20 01:58:45 Jezreel systemd[1]: Starting The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun starting up.
+ago 20 01:58:46 Jezreel apachectl[8631]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+ago 20 01:58:46 Jezreel systemd[1]: Started The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 01:58:56 Jezreel sudo[8520]: pam_unix(sudo:session): session closed for user root
+ago 20 01:59:01 Jezreel kernel: usb 1-3: USB disconnect, device number 6
+ago 20 01:59:01 Jezreel kernel: rndis_host 1-3:1.0 enp0s20u3: unregister 'rndis_host' usb-0000:00:14.0-3, RNDIS device
+ago 20 01:59:01 Jezreel dhclient[8454]: [0;1;31m[0;1;39m[0;1;31mreceive_packet failed on enp0s20u3: Network is down[0m
+ago 20 01:59:01 Jezreel avahi-daemon[887]: Interface enp0s20u3.IPv6 no longer relevant for mDNS.
+ago 20 01:59:01 Jezreel avahi-daemon[887]: Leaving mDNS multicast group on interface enp0s20u3.IPv6 with address fe80::2f65:c7e:e2a:a172.
+ago 20 01:59:01 Jezreel NetworkManager[877]: <info>  [1597903141.4370] device (enp0s20u3): state change: activated -> unmanaged (reason 'removed', sys-iface-state: 'removed')
+ago 20 01:59:01 Jezreel avahi-daemon[887]: Interface enp0s20u3.IPv4 no longer relevant for mDNS.
+ago 20 01:59:01 Jezreel avahi-daemon[887]: Leaving mDNS multicast group on interface enp0s20u3.IPv4 with address 192.168.42.34.
+ago 20 01:59:01 Jezreel avahi-daemon[887]: Withdrawing address record for fe80::2f65:c7e:e2a:a172 on enp0s20u3.
+ago 20 01:59:01 Jezreel avahi-daemon[887]: Withdrawing address record for 192.168.42.34 on enp0s20u3.
+ago 20 01:59:01 Jezreel dbus-daemon[824]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.15' (uid=0 pid=877 comm="/usr/sbin/NetworkManager --no-daemon " label="unconfined")
+ago 20 01:59:01 Jezreel upowerd[1387]: [0;1;39m[0;1;31m[0;1;39munhandled action 'unbind' on /sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.1[0m
+ago 20 01:59:01 Jezreel systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Unit NetworkManager-dispatcher.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit NetworkManager-dispatcher.service has begun starting up.
+ago 20 01:59:01 Jezreel NetworkManager[877]: <info>  [1597903141.4625] dhcp4 (enp0s20u3): canceled DHCP transaction, DHCP client pid 8454
+ago 20 01:59:01 Jezreel NetworkManager[877]: <info>  [1597903141.4626] dhcp4 (enp0s20u3): state changed bound -> done
+ago 20 01:59:01 Jezreel NetworkManager[877]: <info>  [1597903141.4643] manager: NetworkManager state is now CONNECTED_LOCAL
+ago 20 01:59:01 Jezreel NetworkManager[877]: <info>  [1597903141.4650] manager: NetworkManager state is now DISCONNECTED
+ago 20 01:59:01 Jezreel dbus-daemon[824]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+ago 20 01:59:01 Jezreel systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Unit NetworkManager-dispatcher.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit NetworkManager-dispatcher.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 01:59:01 Jezreel nm-dispatcher[8713]: req:1 'connectivity-change': new request (1 scripts)
+ago 20 01:59:01 Jezreel nm-dispatcher[8713]: req:1 'connectivity-change': start running ordered scripts...
+ago 20 01:59:01 Jezreel upowerd[1387]: [0;1;39m[0;1;31m[0;1;39munhandled action 'unbind' on /sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0[0m
+ago 20 01:59:01 Jezreel upowerd[1387]: [0;1;39m[0;1;31m[0;1;39munhandled action 'unbind' on /sys/devices/pci0000:00/0000:00:14.0/usb1/1-3[0m
+ago 20 01:59:01 Jezreel nm-dispatcher[8713]: req:2 'down' [enp0s20u3]: new request (1 scripts)
+ago 20 01:59:01 Jezreel nm-dispatcher[8713]: req:2 'down' [enp0s20u3]: start running ordered scripts...
+ago 20 01:59:01 Jezreel NetworkManager[877]: <info>  [1597903141.6286] devices removed (path: /sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/net/enp0s20u3, iface: enp0s20u3)
+ago 20 01:59:01 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597903141.6362] dns-sd-resolved[0x556afbadb9e0]: Failed: GDBus.Error:org.freedesktop.resolve1.NoSuchLink: Link 4 not known[0m
+ago 20 01:59:01 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597903141.6364] dns-sd-resolved[0x556afbadb9e0]: Failed: GDBus.Error:org.freedesktop.resolve1.NoSuchLink: Link 4 not known[0m
+ago 20 01:59:01 Jezreel NetworkManager[877]: [0;1;39m[0;1;31m[0;1;39m<warn>  [1597903141.6365] dns-sd-resolved[0x556afbadb9e0]: Failed: GDBus.Error:org.freedesktop.resolve1.NoSuchLink: Link 4 not known[0m
+ago 20 01:59:01 Jezreel gsd-sharing[4300]: [0;1;39m[0;1;31m[0;1;39mFailed to StopUnit service: GDBus.Error:org.freedesktop.systemd1.NoSuchUnit: Unit gnome-user-share-webdav.service not loaded.[0m
+ago 20 01:59:01 Jezreel gsd-sharing[4300]: [0;1;39m[0;1;31m[0;1;39mFailed to StopUnit service: GDBus.Error:org.freedesktop.systemd1.NoSuchUnit: Unit rygel.service not loaded.[0m
+ago 20 01:59:01 Jezreel gsd-sharing[4300]: [0;1;39m[0;1;31m[0;1;39mFailed to StopUnit service: GDBus.Error:org.freedesktop.systemd1.NoSuchUnit: Unit gnome-remote-desktop.service not loaded.[0m
+ago 20 01:59:01 Jezreel kernel: usb 1-3: new high-speed USB device number 7 using xhci_hcd
+ago 20 01:59:02 Jezreel kernel: usb 1-3: New USB device found, idVendor=2717, idProduct=ff40, bcdDevice= 3.18
+ago 20 01:59:02 Jezreel kernel: usb 1-3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+ago 20 01:59:02 Jezreel kernel: usb 1-3: Product: Android
+ago 20 01:59:02 Jezreel kernel: usb 1-3: Manufacturer: Android
+ago 20 01:59:02 Jezreel kernel: usb 1-3: SerialNumber: 67592a17
+ago 20 01:59:02 Jezreel upowerd[1387]: [0;1;39m[0;1;31m[0;1;39munhandled action 'bind' on /sys/devices/pci0000:00/0000:00:14.0/usb1/1-3[0m
+ago 20 01:59:02 Jezreel gvfsd[4141]: Device 0 (VID=2717 and PID=ff40) is a Xiaomi Mi-2s (id2) (MTP).
+ago 20 01:59:02 Jezreel gvfsd[4141]: Error 1: Get Storage information failed.
+ago 20 01:59:02 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Activating service name='org.gnome.Shell.HotplugSniffer' requested by ':1.18' (uid=1000 pid=4199 comm="/usr/bin/gnome-shell " label="unconfined")
+ago 20 01:59:02 Jezreel dbus-daemon[4060]: [session uid=1000 pid=4060] Successfully activated service 'org.gnome.Shell.HotplugSniffer'
+ago 20 01:59:02 Jezreel NetworkManager[877]: <info>  [1597903142.5221] connectivity: (enp0s20u3) timed out
+ago 20 01:59:03 Jezreel kernel: usb 1-3: USB disconnect, device number 7
+ago 20 01:59:03 Jezreel gvfsd[4141]: PTP: reading event an error 0x05 occurred
+ago 20 01:59:03 Jezreel upowerd[1387]: [0;1;39m[0;1;31m[0;1;39munhandled action 'unbind' on /sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0[0m
+ago 20 01:59:03 Jezreel upowerd[1387]: [0;1;39m[0;1;31m[0;1;39munhandled action 'unbind' on /sys/devices/pci0000:00/0000:00:14.0/usb1/1-3[0m
+ago 20 01:59:04 Jezreel gvfsd[4141]: Android device detected, assigning default bug flags
+ago 20 01:59:09 Jezreel sudo[8772]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+ago 20 01:59:09 Jezreel sudo[8772]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 01:59:09 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 01:59:09 Jezreel apachectl[8777]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+ago 20 01:59:09 Jezreel systemd[1]: Reloaded The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 01:59:09 Jezreel sudo[8772]: pam_unix(sudo:session): session closed for user root
+ago 20 01:59:23 Jezreel dbus-daemon[824]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.166' (uid=1000 pid=8797 comm="/opt/google/chrome/chrome " label="unconfined")
+ago 20 01:59:25 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8838:8838:0820/015925.102367:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.[0m
+ago 20 01:59:27 Jezreel gnome-keyring-daemon[4040]: [0;1;39m[0;1;31m[0;1;39masked to register item /org/freedesktop/secrets/collection/login/1, but it's already registered[0m
+ago 20 01:59:31 Jezreel gnome-keyring-daemon[4040]: [0;1;39m[0;1;31m[0;1;39masked to register item /org/freedesktop/secrets/collection/login/1, but it's already registered[0m
+ago 20 01:59:43 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/015943.995249:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106[0m
+ago 20 01:59:44 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/015943.999927:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 01:59:44 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/015944.018564:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 01:59:44 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/015944.018794:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 01:59:48 Jezreel dbus-daemon[824]: [0;1;39m[0;1;31m[0;1;39m[system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)[0m
+ago 20 01:59:56 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39mFontconfig error: Cannot load default config file: No such file: (null)[0m
+ago 20 02:00:03 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8797:0820/020003.213048:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Connection failed (-106).[0m
+ago 20 02:00:04 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/020004.281671:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 02:00:04 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8797:0820/020004.479192:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Connection failed (-106).[0m
+ago 20 02:00:09 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/020009.302956:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 02:00:13 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/020013.059355:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106[0m
+ago 20 02:00:13 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/020013.205467:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 02:00:36 Jezreel pkexec[9216]: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+ago 20 02:00:36 Jezreel pkexec[9216]: [0;1;39m[0;1;31m[0;1;39mcpalacios: Executing command [USER=root] [TTY=unknown] [CWD=/home/cpalacios] [COMMAND=/usr/lib/update-notifier/package-system-locked][0m
+ago 20 02:01:00 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/020100.319015:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 02:01:01 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/020101.996388:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 02:01:03 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/020103.165743:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 02:01:12 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/020112.496939:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106[0m
+ago 20 02:01:39 Jezreel sudo[9333]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/bin/nano /etc/hosts[0m
+ago 20 02:01:39 Jezreel sudo[9333]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:01:58 Jezreel sudo[9333]: pam_unix(sudo:session): session closed for user root
+ago 20 02:02:14 Jezreel systemd[1]: Started Run anacron jobs.
+-- Subject: Unit anacron.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit anacron.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 02:02:14 Jezreel anacron[9421]: [0;1;39m[0;1;31m[0;1;39mAnacron 2.3 started on 2020-08-20[0m
+ago 20 02:02:14 Jezreel anacron[9421]: [0;1;39m[0;1;31m[0;1;39mNormal exit (0 jobs run)[0m
+ago 20 02:02:26 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/020226.096728:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 02:02:49 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/020249.812706:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106[0m
+ago 20 02:02:58 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/020258.086466:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 02:03:00 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/020300.160203:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 02:03:31 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mError getting permissions: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for inhibit[0m
+ago 20 02:03:31 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mBackend call failed: GDBus.Error:org.freedesktop.portal.Error.Failed: Inhibiting other than idle not supported[0m
+ago 20 02:04:05 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 02:04:30 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mError getting permissions: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for inhibit[0m
+ago 20 02:04:30 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mBackend call failed: GDBus.Error:org.freedesktop.portal.Error.Failed: Inhibiting other than idle not supported[0m
+ago 20 02:04:33 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 02:04:35 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 02:04:36 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 02:05:01 Jezreel CRON[9680]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 02:05:01 Jezreel CRON[9681]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+ago 20 02:05:01 Jezreel CRON[9680]: pam_unix(cron:session): session closed for user root
+ago 20 02:05:03 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mError getting permissions: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for inhibit[0m
+ago 20 02:05:03 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mBackend call failed: GDBus.Error:org.freedesktop.portal.Error.Failed: Inhibiting other than idle not supported[0m
+ago 20 02:05:08 Jezreel kernel: perf: interrupt took too long (4056 > 4052), lowering kernel.perf_event_max_sample_rate to 49250
+ago 20 02:05:48 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/020548.975323:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106[0m
+ago 20 02:06:15 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/020615.803866:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 02:06:24 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/020624.175290:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 02:06:59 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/020659.193341:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 02:08:18 Jezreel sudo[9965]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/usr/sbin/a2dissite djangoargon.conf[0m
+ago 20 02:08:18 Jezreel sudo[9965]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:08:18 Jezreel sudo[9965]: pam_unix(sudo:session): session closed for user root
+ago 20 02:08:24 Jezreel sudo[9982]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+ago 20 02:08:24 Jezreel sudo[9982]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:08:24 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 02:08:24 Jezreel apachectl[9985]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+ago 20 02:08:24 Jezreel systemd[1]: Reloaded The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 02:08:24 Jezreel sudo[9982]: pam_unix(sudo:session): session closed for user root
+ago 20 02:08:34 Jezreel sudo[10007]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/usr/sbin/a2ensite djangoargon.conf[0m
+ago 20 02:08:34 Jezreel sudo[10007]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:08:34 Jezreel sudo[10007]: pam_unix(sudo:session): session closed for user root
+ago 20 02:08:37 Jezreel sudo[10016]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+ago 20 02:08:37 Jezreel sudo[10016]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:08:37 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 02:08:37 Jezreel apachectl[10019]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+ago 20 02:08:37 Jezreel systemd[1]: Reloaded The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 02:08:37 Jezreel sudo[10016]: pam_unix(sudo:session): session closed for user root
+ago 20 02:09:01 Jezreel CRON[10060]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 02:09:01 Jezreel CRON[10061]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+ago 20 02:09:01 Jezreel CRON[10060]: pam_unix(cron:session): session closed for user root
+ago 20 02:09:05 Jezreel systemd[1]: Starting Clean php session files...
+-- Subject: Unit phpsessionclean.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit phpsessionclean.service has begun starting up.
+ago 20 02:09:05 Jezreel sessionclean[10071]: PHP Warning:  PHP Startup: Unable to load dynamic library 'openssl' (tried: /usr/lib/php/20190902/openssl (/usr/lib/php/20190902/openssl: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/openssl.so (/usr/lib/php/20190902/openssl.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+ago 20 02:09:05 Jezreel sessionclean[10071]: PHP Warning:  PHP Startup: Unable to load dynamic library 'xmlrpc' (tried: /usr/lib/php/20190902/xmlrpc (/usr/lib/php/20190902/xmlrpc: cannot open shared object file: No such file or directory), /usr/lib/php/20190902/xmlrpc.so (/usr/lib/php/20190902/xmlrpc.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+ago 20 02:09:05 Jezreel sessionclean[10071]: PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+ago 20 02:09:05 Jezreel sessionclean[10071]: PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+ago 20 02:09:05 Jezreel sessionclean[10071]: PHP Warning:  PHP Startup: Unable to load dynamic library 'intl' (tried: /usr/lib/php/20170718/intl (/usr/lib/php/20170718/intl: cannot open shared object file: No such file or directory), /usr/lib/php/20170718/intl.so (/usr/lib/php/20170718/intl.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+ago 20 02:09:06 Jezreel systemd[1]: Started Clean php session files.
+-- Subject: Unit phpsessionclean.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit phpsessionclean.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+ago 20 02:09:06 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 02:09:11 Jezreel sudo[10163]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/usr/sbin/a2ensite djangoargon.conf[0m
+ago 20 02:09:11 Jezreel sudo[10163]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:09:11 Jezreel sudo[10163]: pam_unix(sudo:session): session closed for user root
+ago 20 02:09:17 Jezreel sudo[10187]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/usr/sbin/a2dissite djangoargon.conf[0m
+ago 20 02:09:17 Jezreel sudo[10187]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:09:17 Jezreel sudo[10187]: pam_unix(sudo:session): session closed for user root
+ago 20 02:09:24 Jezreel sudo[10203]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/usr/sbin/a2ensite djangoargon.conf[0m
+ago 20 02:09:24 Jezreel sudo[10203]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:09:24 Jezreel sudo[10203]: pam_unix(sudo:session): session closed for user root
+ago 20 02:09:30 Jezreel sudo[10219]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+ago 20 02:09:30 Jezreel sudo[10219]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:09:30 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 02:09:30 Jezreel apachectl[10222]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+ago 20 02:09:30 Jezreel systemd[1]: Reloaded The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 02:09:30 Jezreel sudo[10219]: pam_unix(sudo:session): session closed for user root
+ago 20 02:09:48 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39mFontconfig error: Cannot load default config file: No such file: (null)[0m
+ago 20 02:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-fwupd.service-gZmlcT: Error opening directory '/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-fwupd.service-gZmlcT': Permission denied[0m
+ago 20 02:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-apache2.service-AffVHE: Error opening directory '/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-apache2.service-AffVHE': Permission denied[0m
+ago 20 02:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-ModemManager.service-QO3y7n: Error opening directory '/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-ModemManager.service-QO3y7n': Permission denied[0m
+ago 20 02:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-rtkit-daemon.service-2HSgAJ: Error opening directory '/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-rtkit-daemon.service-2HSgAJ': Permission denied[0m
+ago 20 02:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-systemd-resolved.service-mRea26: Error opening directory '/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-systemd-resolved.service-mRea26': Permission denied[0m
+ago 20 02:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-colord.service-qSVIJm: Error opening directory '/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-colord.service-qSVIJm': Permission denied[0m
+ago 20 02:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-colord.service-nGhZrx: Error opening directory '/var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-colord.service-nGhZrx': Permission denied[0m
+ago 20 02:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-fwupd.service-RT34iC: Error opening directory '/var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-fwupd.service-RT34iC': Permission denied[0m
+ago 20 02:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-apache2.service-TwDAtR: Error opening directory '/var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-apache2.service-TwDAtR': Permission denied[0m
+ago 20 02:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-bolt.service-lmCDFO: Error opening directory '/var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-bolt.service-lmCDFO': Permission denied[0m
+ago 20 02:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-ModemManager.service-F0U2YJ: Error opening directory '/var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-ModemManager.service-F0U2YJ': Permission denied[0m
+ago 20 02:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-rtkit-daemon.service-3TzlIR: Error opening directory '/var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-rtkit-daemon.service-3TzlIR': Permission denied[0m
+ago 20 02:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-systemd-resolved.service-DBjQ5k: Error opening directory '/var/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-systemd-resolved.service-DBjQ5k': Permission denied[0m
+ago 20 02:11:27 Jezreel gsd-housekeepin[4345]: [0;1;39m[0;1;31m[0;1;39mFailed to enumerate children of /tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-bolt.service-41kYb3: Error opening directory '/tmp/systemd-private-b2ffa79a2259446f88c2a233bee036aa-bolt.service-41kYb3': Permission denied[0m
+ago 20 02:13:16 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/021316.661536:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106[0m
+ago 20 02:13:45 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/021345.858424:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 02:14:08 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/021408.020628:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 02:14:42 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/021442.190787:ERROR:registration_request.cc(246)] Registration URL fetching failed.[0m
+ago 20 02:15:01 Jezreel CRON[10744]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 02:15:01 Jezreel CRON[10745]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+ago 20 02:15:01 Jezreel CRON[10744]: pam_unix(cron:session): session closed for user root
+ago 20 02:17:01 Jezreel CRON[10918]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 02:17:01 Jezreel CRON[10919]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+ago 20 02:17:01 Jezreel CRON[10918]: pam_unix(cron:session): session closed for user root
+ago 20 02:17:38 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mError getting permissions: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for inhibit[0m
+ago 20 02:17:38 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mBackend call failed: GDBus.Error:org.freedesktop.portal.Error.Failed: Inhibiting other than idle not supported[0m
+ago 20 02:17:42 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 02:18:07 Jezreel sudo[11026]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/usr/sbin/a2dissite djangoargon.conf[0m
+ago 20 02:18:07 Jezreel sudo[11026]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:18:07 Jezreel sudo[11026]: pam_unix(sudo:session): session closed for user root
+ago 20 02:18:14 Jezreel sudo[11053]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+ago 20 02:18:14 Jezreel sudo[11053]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:18:14 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 02:18:14 Jezreel apachectl[11056]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+ago 20 02:18:14 Jezreel systemd[1]: Reloaded The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 02:18:14 Jezreel sudo[11053]: pam_unix(sudo:session): session closed for user root
+ago 20 02:18:20 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 02:18:20 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 02:18:29 Jezreel sudo[11071]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/usr/sbin/a2ensite djangoargon.conf[0m
+ago 20 02:18:29 Jezreel sudo[11071]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:18:29 Jezreel sudo[11071]: pam_unix(sudo:session): session closed for user root
+ago 20 02:18:31 Jezreel sudo[11080]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/my-env/lib/python3.6/site-packages ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+ago 20 02:18:31 Jezreel sudo[11080]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:18:31 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 02:18:31 Jezreel apachectl[11083]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+ago 20 02:18:31 Jezreel systemd[1]: Reloaded The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 02:18:31 Jezreel sudo[11080]: pam_unix(sudo:session): session closed for user root
+ago 20 02:19:51 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mError getting permissions: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for inhibit[0m
+ago 20 02:19:51 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mBackend call failed: GDBus.Error:org.freedesktop.portal.Error.Failed: Inhibiting other than idle not supported[0m
+ago 20 02:20:45 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Attempting to re-register :1.54/org/ayatana/NotificationItem/clipit; resetting instead[0m
+ago 20 02:20:45 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Item :1.54/org/ayatana/NotificationItem/clipit is already registered[0m
+ago 20 02:21:29 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Attempting to re-register :1.54/org/ayatana/NotificationItem/clipit; resetting instead[0m
+ago 20 02:21:29 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Item :1.54/org/ayatana/NotificationItem/clipit is already registered[0m
+ago 20 02:22:04 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 02:23:16 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39m[8797:8824:0820/022316.694633:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106[0m
+ago 20 02:24:18 Jezreel sudo[11589]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/argon/core ; USER=root ; COMMAND=/usr/sbin/a2dissite djangoargon.conf[0m
+ago 20 02:24:18 Jezreel sudo[11589]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:24:18 Jezreel sudo[11589]: pam_unix(sudo:session): session closed for user root
+ago 20 02:24:24 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 02:24:25 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 02:24:37 Jezreel sudo[11632]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/argon/core ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+ago 20 02:24:37 Jezreel sudo[11632]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:24:37 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 02:24:37 Jezreel apachectl[11635]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+ago 20 02:24:37 Jezreel systemd[1]: Reloaded The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 02:24:37 Jezreel sudo[11632]: pam_unix(sudo:session): session closed for user root
+ago 20 02:24:44 Jezreel sudo[11646]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/argon/core ; USER=root ; COMMAND=/usr/sbin/a2ensite djangoargon.conf[0m
+ago 20 02:24:44 Jezreel sudo[11646]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:24:44 Jezreel sudo[11646]: pam_unix(sudo:session): session closed for user root
+ago 20 02:24:46 Jezreel sudo[11655]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/argon/core ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+ago 20 02:24:46 Jezreel sudo[11655]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:24:46 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 02:24:47 Jezreel apachectl[11658]: AH00526: Syntax error on line 28 of /etc/apache2/sites-enabled/djangoargon.conf:
+ago 20 02:24:47 Jezreel apachectl[11658]: Invalid command 'WSGIDaemonPythonHome', perhaps misspelled or defined by a module not included in the server configuration
+ago 20 02:24:47 Jezreel apachectl[11658]: Action 'graceful' failed.
+ago 20 02:24:47 Jezreel apachectl[11658]: The Apache error log may have more information.
+ago 20 02:24:47 Jezreel systemd[1]: [0;1;39m[0;1;31m[0;1;39mapache2.service: Control process exited, code=exited status=1[0m
+ago 20 02:24:47 Jezreel systemd[1]: [0;1;31m[0;1;39m[0;1;31mReload failed for The Apache HTTP Server.[0m
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 02:24:47 Jezreel sudo[11655]: pam_unix(sudo:session): session closed for user root
+ago 20 02:25:02 Jezreel CRON[11668]: pam_unix(cron:session): session opened for user root by (uid=0)
+ago 20 02:25:02 Jezreel CRON[11669]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+ago 20 02:25:02 Jezreel CRON[11668]: pam_unix(cron:session): session closed for user root
+ago 20 02:25:11 Jezreel org.gnome.Shell.desktop[4199]: [0;1;39m[0;1;31m[0;1;39mFontconfig error: Cannot load default config file: No such file: (null)[0m
+ago 20 02:25:21 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mError getting permissions: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for inhibit[0m
+ago 20 02:25:21 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mBackend call failed: GDBus.Error:org.freedesktop.portal.Error.Failed: Inhibiting other than idle not supported[0m
+ago 20 02:25:24 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 02:25:46 Jezreel sudo[11728]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/argon/core ; USER=root ; COMMAND=/usr/sbin/a2dissite djangoargon.conf[0m
+ago 20 02:25:46 Jezreel sudo[11728]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:25:46 Jezreel sudo[11728]: pam_unix(sudo:session): session closed for user root
+ago 20 02:25:48 Jezreel sudo[11737]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/argon/core ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+ago 20 02:25:48 Jezreel sudo[11737]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:25:48 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 02:25:49 Jezreel apachectl[11740]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+ago 20 02:25:49 Jezreel systemd[1]: Reloaded The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 02:25:49 Jezreel sudo[11737]: pam_unix(sudo:session): session closed for user root
+ago 20 02:25:51 Jezreel sudo[11750]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/argon/core ; USER=root ; COMMAND=/usr/sbin/a2ensite djangoargon.conf[0m
+ago 20 02:25:51 Jezreel sudo[11750]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:25:51 Jezreel sudo[11750]: pam_unix(sudo:session): session closed for user root
+ago 20 02:25:53 Jezreel sudo[11759]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/argon/core ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+ago 20 02:25:53 Jezreel sudo[11759]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:25:54 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 02:25:54 Jezreel apachectl[11762]: AH00526: Syntax error on line 28 of /etc/apache2/sites-enabled/djangoargon.conf:
+ago 20 02:25:54 Jezreel apachectl[11762]: Invalid command 'WSGIDaemonPythonHome', perhaps misspelled or defined by a module not included in the server configuration
+ago 20 02:25:54 Jezreel apachectl[11762]: Action 'graceful' failed.
+ago 20 02:25:54 Jezreel apachectl[11762]: The Apache error log may have more information.
+ago 20 02:25:54 Jezreel systemd[1]: [0;1;39m[0;1;31m[0;1;39mapache2.service: Control process exited, code=exited status=1[0m
+ago 20 02:25:54 Jezreel systemd[1]: [0;1;31m[0;1;39m[0;1;31mReload failed for The Apache HTTP Server.[0m
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 02:25:54 Jezreel sudo[11759]: pam_unix(sudo:session): session closed for user root
+ago 20 02:26:06 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Attempting to re-register :1.54/org/ayatana/NotificationItem/clipit; resetting instead[0m
+ago 20 02:26:06 Jezreel gnome-shell[4199]: [0;1;39m[0;1;31m[0;1;39m[AppIndicatorSupport-WARN] Item :1.54/org/ayatana/NotificationItem/clipit is already registered[0m
+ago 20 02:27:27 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mError getting permissions: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for inhibit[0m
+ago 20 02:27:27 Jezreel xdg-desktop-por[7914]: [0;1;39m[0;1;31m[0;1;39mBackend call failed: GDBus.Error:org.freedesktop.portal.Error.Failed: Inhibiting other than idle not supported[0m
+ago 20 02:27:32 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 02:27:33 Jezreel nautilus[5702]: [0;1;39m[0;1;31m[0;1;39mAttempting to read the recently used resources file at '/home/cpalacios/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/cpalacios/.local/share/recently-used.xbel”: Permission denied.[0m
+ago 20 02:27:46 Jezreel sudo[11811]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/argon/core ; USER=root ; COMMAND=/usr/sbin/a2dissite djangoargon.conf[0m
+ago 20 02:27:46 Jezreel sudo[11811]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:27:46 Jezreel sudo[11811]: pam_unix(sudo:session): session closed for user root
+ago 20 02:27:52 Jezreel sudo[11835]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/argon/core ; USER=root ; COMMAND=/usr/sbin/a2ensite djangoargon.conf[0m
+ago 20 02:27:52 Jezreel sudo[11835]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:27:52 Jezreel sudo[11835]: pam_unix(sudo:session): session closed for user root
+ago 20 02:27:55 Jezreel sudo[11844]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/argon/core ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+ago 20 02:27:55 Jezreel sudo[11844]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:27:55 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 02:27:56 Jezreel apachectl[11847]: AH00526: Syntax error on line 28 of /etc/apache2/sites-enabled/djangoargon.conf:
+ago 20 02:27:56 Jezreel apachectl[11847]: WSGIPythonHome cannot occur within <VirtualHost> section
+ago 20 02:27:56 Jezreel apachectl[11847]: Action 'graceful' failed.
+ago 20 02:27:56 Jezreel apachectl[11847]: The Apache error log may have more information.
+ago 20 02:27:56 Jezreel systemd[1]: [0;1;39m[0;1;31m[0;1;39mapache2.service: Control process exited, code=exited status=1[0m
+ago 20 02:27:56 Jezreel systemd[1]: [0;1;31m[0;1;39m[0;1;31mReload failed for The Apache HTTP Server.[0m
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 02:27:56 Jezreel sudo[11844]: pam_unix(sudo:session): session closed for user root
+ago 20 02:28:03 Jezreel sudo[11853]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/argon/core ; USER=root ; COMMAND=/usr/sbin/a2dissite djangoargon.conf[0m
+ago 20 02:28:03 Jezreel sudo[11853]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:28:03 Jezreel sudo[11853]: pam_unix(sudo:session): session closed for user root
+ago 20 02:28:05 Jezreel sudo[11863]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/argon/core ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+ago 20 02:28:05 Jezreel sudo[11863]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:28:05 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 02:28:06 Jezreel apachectl[11866]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+ago 20 02:28:06 Jezreel systemd[1]: Reloaded The Apache HTTP Server.
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 02:28:06 Jezreel sudo[11863]: pam_unix(sudo:session): session closed for user root
+ago 20 02:28:11 Jezreel sudo[11875]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/argon/core ; USER=root ; COMMAND=/usr/sbin/a2ensite djangoargon.conf[0m
+ago 20 02:28:11 Jezreel sudo[11875]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:28:11 Jezreel sudo[11875]: pam_unix(sudo:session): session closed for user root
+ago 20 02:28:13 Jezreel sudo[11884]: [0;1;39m[0;1;31m[0;1;39mcpalacios : TTY=pts/1 ; PWD=/home/cpalacios/Documents/pythonproy/django3/argon/core ; USER=root ; COMMAND=/bin/systemctl reload apache2[0m
+ago 20 02:28:13 Jezreel sudo[11884]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ago 20 02:28:13 Jezreel systemd[1]: Reloading The Apache HTTP Server.
+-- Subject: Unit apache2.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has begun reloading its configuration
+ago 20 02:28:13 Jezreel apachectl[11887]: AH00526: Syntax error on line 28 of /etc/apache2/sites-enabled/djangoargon.conf:
+ago 20 02:28:13 Jezreel apachectl[11887]: WSGIPythonHome cannot occur within <VirtualHost> section
+ago 20 02:28:13 Jezreel apachectl[11887]: Action 'graceful' failed.
+ago 20 02:28:13 Jezreel apachectl[11887]: The Apache error log may have more information.
+ago 20 02:28:13 Jezreel systemd[1]: [0;1;39m[0;1;31m[0;1;39mapache2.service: Control process exited, code=exited status=1[0m
+ago 20 02:28:13 Jezreel systemd[1]: [0;1;31m[0;1;39m[0;1;31mReload failed for The Apache HTTP Server.[0m
+-- Subject: Unit apache2.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit apache2.service has finished reloading its configuration
+-- 
+-- The result is RESULT.
+ago 20 02:28:13 Jezreel sudo[11884]: pam_unix(sudo:session): session closed for user root

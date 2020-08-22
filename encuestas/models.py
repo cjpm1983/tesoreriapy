@@ -44,19 +44,28 @@ class Choice(models.Model):
         return self.choice_text
 
 class Persona(models.Model):
-    last_name = models.TextField()
-    first_name = models.TextField()
-    courses = models.ManyToManyField("Curso", blank = True)
+    last_name = models.CharField(max_length=200)
+    first_name = models.CharField(max_length=200)
+    courses = models.ManyToManyField("Curso", blank=True)
 
     class Meta:
         verbose_name_plural = "Personas"
+    def __str__(self):
+        return self.first_name + " " +self.last_name
 
 class Curso(models.Model):
-    name = models.TextField()
-    year = models.IntegerField()
+    name = models.CharField(max_length=200)
+    year = models.CharField(max_length=200)
+    personas = models.ManyToManyField("Persona", through=Persona.courses.through, blank=True)
+    activo = models.BooleanField(verbose_name='Curso Activo', default=False)
 
     class Meta:
         unique_together = ("name","year",)
+
+    def __str__(self):
+        return self.name
+    def compuesto(self):
+        return self.name+'-'+self.year
 
 class Calificacion(models.Model):
     persona = models.ForeignKey(Persona, on_delete = models.CASCADE)

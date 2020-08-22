@@ -20,12 +20,13 @@ SECRET_KEY = config('SECRET_KEY', default='S#perS3crEt_1122')
 DEBUG = config('DEBUG', default=False)
 
 # load production server from .env
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', config('SERVER', default='127.0.0.1')]
+ALLOWED_HOSTS = ['http://django.com/','djangoproject.localhost','django.com','argon.com','localhost', '127.0.0.1', config('SERVER', default='127.0.0.1')]
 
 # Application definition
 
 INSTALLED_APPS = [
     'encuestas.apps.EncuestasConfig',
+    'tesoreria.apps.TesoreriaConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,7 +76,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'dbargon.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'data.sqlite3'),
     }
 }
 
@@ -101,7 +102,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'es'
 
 TIME_ZONE = 'UTC'
 
