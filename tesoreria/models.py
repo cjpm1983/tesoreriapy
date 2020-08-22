@@ -12,7 +12,7 @@ from django.db import models
 
 class Anios(models.Model):
     id = models.AutoField(primary_key=True)  # AutoField?
-    anio = models.TextField()
+    anio = models.TextField(max_length=10)
 
     class Meta:
         managed = True
@@ -24,14 +24,13 @@ class Anios(models.Model):
 
 class Iglesias(models.Model):
     id = models.AutoField(primary_key=True)  # AutoField?
-    iglesia = models.TextField()
-    provincia = models.TextField(blank=True, null=True)
-    presbiterio = models.TextField(blank=True, null=True)
-    alta = models.TextField(blank=True, null=True)
-    baja = models.TextField(blank=True, null=True)
-    activa =models.BooleanField(default=True)
-
-
+    iglesia = models.CharField(max_length=200)
+    provincia = models.CharField(blank=True, null=True,max_length=200)
+    presbiterio = models.CharField(blank=True, null=True,max_length=200)
+    alta = models.DateField(blank=True, null=True)
+    baja = models.DateField(blank=True, null=True)
+    activa = models.BooleanField(default=True)
+    misioneros = models.ManyToManyField('Obreros', blank=True, verbose_name="Es obrero en")
 
     def __str__(self):
         return self.iglesia
@@ -44,11 +43,12 @@ class Iglesias(models.Model):
 
 class Obreros(models.Model):
     id = models.AutoField(primary_key=True)  # AutoField?
-    folio = models.TextField(blank=True, null=True)
-    nombre = models.TextField(db_column='Nombre', blank=True, null=True)  # Field name made lowercase.
-    alta = models.TextField(blank=True, null=True)
-    baja = models.TextField(blank=True, null=True)
-    iglesia_id = models.ForeignKey("Iglesias",on_delete=models.DO_NOTHING, blank=True, null=True, )
+    folio = models.CharField(blank=True, null=True,max_length=20)
+    nombre = models.CharField(db_column='Nombre', blank=True, null=True,max_length=200)  # Field name made lowercase.
+    alta = models.DateField(blank=True, null=True)
+    baja = models.DateField(blank=True, null=True)
+    iglesia_id = models.ManyToManyField("Iglesias", through=Iglesias.misioneros.through, blank=True, verbose_name="Iglesias donde ministra" )
+    activo = models.BooleanField(default=True)
 
     def __str__(self):
         return self.nombre
@@ -61,9 +61,12 @@ class Obreros(models.Model):
 
 class Aportesiglesias(models.Model):
     id = models.AutoField(primary_key=True)  # AutoField?
-    #por defecto lomando para encrucijada
-    iglesia_id = models.ForeignKey("Iglesias",on_delete=models.CASCADE, blank=False, null=False, verbose_name='Iglesia que aporta', default=Iglesias.objects.get(iglesia='ENCRUCIJADA').id)
-    anio_id = models.ForeignKey("Anios",on_delete=models.DO_NOTHING, blank=False, null=False,default=Anios.objects.get(anio=str(datetime.now().year)).id)
+    # por defecto lomando para encrucijada
+    iglesia_id = models.ForeignKey("Iglesias", on_delete=models.CASCADE, blank=False, null=False,
+                                   verbose_name='Iglesia que aporta',
+                                   default=Iglesias.objects.get(iglesia='ENCRUCIJADA').id)
+    anio_id = models.ForeignKey("Anios", on_delete=models.DO_NOTHING, blank=False, null=False,
+                                default=Anios.objects.get(anio=str(datetime.now().year)).id)
     feb = models.FloatField(default=0.00)
     ene = models.FloatField(default=0.00)
     mar = models.FloatField(default=0.00)
@@ -91,12 +94,13 @@ class Aportesiglesias(models.Model):
         return '%s-%s' % (self.iglesia_id.iglesia, self.anio_id.anio)
 
 
-
 class Aportesobreros(models.Model):
     id = models.IntegerField(primary_key=True)  # AutoField?
 
-    obrero_id = models.ForeignKey("Obreros",on_delete=models.CASCADE, blank=False, null=False, verbose_name='Obrero que aporta', default='')
-    anio_id = models.ForeignKey("Anios",on_delete=models.DO_NOTHING, blank=False, null=False,default=Anios.objects.get(anio=str(datetime.now().year)).id)
+    obrero_id = models.ForeignKey("Obreros", on_delete=models.CASCADE, blank=False, null=False,
+                                  verbose_name='Obrero que aporta', default='')
+    anio_id = models.ForeignKey("Anios", on_delete=models.DO_NOTHING, blank=False, null=False,
+                                default=Anios.objects.get(anio=str(datetime.now().year)).id)
 
     feb = models.FloatField(default=0.00)
     ene = models.FloatField(default=0.00)

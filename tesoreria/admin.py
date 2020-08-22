@@ -6,10 +6,13 @@ from .models import Iglesias, Obreros, Aportesiglesias, Aportesobreros
 class IglesiasAdmin(admin.ModelAdmin):
     list_per_page = 20
     search_fields = ['iglesia']
+    filter_horizontal = ['misioneros']
 
 class ObrerosAdmin(admin.ModelAdmin):
+    #exclude = ['alta','baja']
     list_per_page = 20
     search_fields = ['nombre']
+    filter_horizontal = ['iglesia_id']
 
 class AportesiglesiasAdmin(admin.ModelAdmin):
     list_per_page = 20
@@ -26,7 +29,7 @@ class AportesobrerosAdmin(admin.ModelAdmin):
     list_filter = ('obrero_id','anio_id')
 
 admin.site.register(Iglesias,IglesiasAdmin)
-admin.site.register(Obreros)
+admin.site.register(Obreros,ObrerosAdmin)
 admin.site.register(Aportesiglesias,AportesiglesiasAdmin)
 admin.site.register(Aportesobreros,AportesobrerosAdmin)
 
