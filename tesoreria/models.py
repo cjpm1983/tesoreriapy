@@ -9,7 +9,6 @@ from datetime import datetime
 
 from django.db import models
 
-
 class Anios(models.Model):
     id = models.AutoField(primary_key=True)  # AutoField?
     anio = models.TextField(max_length=10)
@@ -38,7 +37,8 @@ class Iglesias(models.Model):
     class Meta:
         managed = True
         db_table = 'Iglesias'
-        verbose_name_plural = "Iglesias"
+        verbose_name_plural = "Iglesias y misiones"
+        verbose_name = "Iglesia"
 
 
 class Obreros(models.Model):
@@ -50,6 +50,8 @@ class Obreros(models.Model):
     iglesia_id = models.ManyToManyField("Iglesias", through=Iglesias.misioneros.through, blank=True, verbose_name="Iglesias donde ministra" )
     activo = models.BooleanField(default=True)
 
+
+
     def __str__(self):
         return self.nombre
 
@@ -57,6 +59,7 @@ class Obreros(models.Model):
         managed = True
         db_table = 'Obreros'
         verbose_name_plural = "Pastores y obreros"
+        verbose_name = "Pastor"
 
 
 class Aportesiglesias(models.Model):
@@ -83,6 +86,8 @@ class Aportesiglesias(models.Model):
     class Meta:
         managed = True
         db_table = 'aportesIglesias'
+        verbose_name_plural = "Aportes de iglesias"
+        verbose_name = "Aporte de iglesia"
 
     # def iglesian(self):
     #     return self.iglesia_id
@@ -95,7 +100,7 @@ class Aportesiglesias(models.Model):
 
 
 class Aportesobreros(models.Model):
-    id = models.IntegerField(primary_key=True)  # AutoField?
+    id = models.AutoField(primary_key=True)  # AutoField?
 
     obrero_id = models.ForeignKey("Obreros", on_delete=models.CASCADE, blank=False, null=False,
                                   verbose_name='Obrero que aporta', default='')
@@ -118,6 +123,8 @@ class Aportesobreros(models.Model):
     class Meta:
         managed = True
         db_table = 'aportesObreros'
+        verbose_name_plural = "Aportes de obreros"
+        verbose_name = "Aporte de obrero"
 
     def __str__(self):
         return '%s-%s' % (self.obrero_id.nombre, self.anio_id.anio)

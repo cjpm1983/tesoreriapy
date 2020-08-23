@@ -8,7 +8,7 @@ from django.contrib.auth.admin import UserAdmin
 from .forms import UserProfileCreationForm, UserProfileChangeForm
 from django.utils.html import format_html
 
-admin.site.site_header = "Mi primer proyecto Django"
+
 
 # Register your models here.
 '''
