@@ -18,8 +18,10 @@ urlpatterns = [
 
     path("", include("authentication.urls")),  # add this
     #path("", include("encuestas.urls")),  # add this
-    path('encuestas/', include('encuestas.urls')),
-    path('tesoreria/', include('tesoreria.urls')),
+    path("", include("tesoreria.urls")),  # add this
+    #path('tesoreria/', include('tesoreria.urls')),
+    #path('encuestas/', include('encuestas.urls')),
+
     path('admin/', admin.site.urls),
 
 ]

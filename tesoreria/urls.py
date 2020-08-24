@@ -5,11 +5,16 @@ Copyright (c) 2019 - present AppSeed.us
 """
 
 from django.urls import path, re_path
-from app import views
+from django.conf.urls.static import static
+
+#importante importar desde . las views
+from . import views
+
+#muy importante esta linea
+app_name = 'tesoreria'
 
 urlpatterns = [
-    # Matches any html file - to be used for gentella
-    # Avoid using your .html in your resources.
-    # Or create a separate django app.
-
+    #path('', views.estadisticas, name='home')
+    path('', views.estadisticas, name='estadisticas'),
+    #path('encuestas/estadisticas',views.estadisticas)
 ]

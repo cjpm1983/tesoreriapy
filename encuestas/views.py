@@ -18,6 +18,7 @@ from encuestas.forms import UserProfileForm, UserProfileChangeForm
 
 
 
+    # return HttpResponse(output)
 
 class IndexView(generic.ListView):
     template_name = 'encuestas/index.html'
