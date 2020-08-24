@@ -4,6 +4,9 @@
 
 @import url(fonts.css);
 
+.logobn{
+width:48px;}
+
 body {
     margin: 0;
     padding: 0;
@@ -520,7 +523,8 @@ input[type=button][disabled].default {
     font-weight: 400;
     font-size: 13px;
     text-align: left;
-    background: #79aec8;
+    /*background: #79aec8;*/
+    background: linear-gradient(87deg, #999999 0, #adafc3 100%) !important;
     color: #fff;
 }
 
@@ -644,7 +648,8 @@ div.system-message p.system-message-title {
 /* BREADCRUMBS */
 
 div.breadcrumbs {
-    background: #79aec8;
+    /* background: #79aec8; */
+    background: linear-gradient(87deg, #4e5aa2 0, #825ee4 100%) !important;
     padding: 10px 40px;
     border: none;
     font-size: 14px;

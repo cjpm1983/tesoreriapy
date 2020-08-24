@@ -11,10 +11,10 @@ from django.conf.urls.static import static
 from . import views
 
 #muy importante esta linea
-app_name = 'tesoreria'
+#app_name = 'tesoreria'
 
 urlpatterns = [
     #path('', views.estadisticas, name='home')
-    path('', views.estadisticas, name='estadisticas'),
+    path('', views.estadisticas, name='home'),
     #path('encuestas/estadisticas',views.estadisticas)
 ]

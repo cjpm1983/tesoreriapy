@@ -32,7 +32,7 @@ class ObrerosAdmin(admin.ModelAdmin):
     list_per_page = 15
     search_fields = ['nombre','iglesia_id__iglesia']
     filter_horizontal = ['iglesia_id']
-    list_display = ('folio','nombre','aportes','activo')
+    list_display = ('nombre','folio','aportes','activo')
     ordering = ('nombre',)
 
     # list_display = ('aportes',)
