@@ -25,9 +25,16 @@ ALLOWED_HOSTS = ['http://django.com/','djangoproject.localhost','django.com','ar
 # Application definition
 
 INSTALLED_APPS = [
+
     'encuestas.apps.EncuestasConfig',
     'tesoreria.apps.TesoreriaConfig',
-    'django.contrib.admin',
+
+    #'django.contrib.admin',
+    'django.contrib.admin.apps.SimpleAdminConfig',
+    'adminplus',
+
+    'admin_reorder',
+
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -37,6 +44,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'admin_reorder.middleware.ModelAdminReorder',
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -46,6 +55,17 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
+
+#un plugin instaladopara organizar el admin
+ADMIN_REORDER = (
+    'sites',
+    #RENOMBRANDO TESORERIA
+    {'app': 'tesoreria','label':'Registro de Pastores e Iglesias', 'models': ('tesoreria.Iglesias', 'tesoreria.Obreros')},
+    {'app':'tesoreria', 'label':'Aportes de Obreros e Iglesias','models':('tesoreria.Aportesiglesias','tesoreria.Aportesobreros')},
+
+)
+#,'models':('tesoreria.iglesias','tesoreria.obreros')
+
 
 ROOT_URLCONF = 'core.urls'
 LOGIN_REDIRECT_URL = "home"   # Route defined in app/urls.py

@@ -1,0 +1,72 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" type="text/css" href="{% static 'admin/css/dashboard.css' %}">{% endblock %}
+
+{% block coltype %}{% endblock %}
+
+{% block bodyclass %}{{ block.super }} dashboard{% endblock %}
+
+{% block breadcrumbs %}{% endblock %}
+{% block usertools %}{{ block.super }}{% endblock %}
+{% block content %}
+<style>
+.dashboard #content {
+    width: unset;
+}
+</style>
+<div id="content-main">
+    <div class="contenido">
+        <h3>
+            Iglesia: {{iglesia}}
+        </h3>
+        <h3>
+            Presbiterio: {{iglesia.presbiterio}}
+        </h3>
+        <h3>
+            Provincia: {{iglesia.provincia}}
+        </h3>
+        <h3>
+            Total aportado: {{total}}
+        </h3>
+        <h3>
+            Pastor(es):
+        </h3>
+        {% for obrero in iglesia.misioneros.all %}
+        <p>
+            {{obrero}}
+        </p>
+        {%endfor%}
+        <form action="{% url 'exportar' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="id" value="{{iglesia.id}}">
+            <input type="hidden" name="tipo" value="iglesia">
+            <input type="submit" value="Exportar Excell">
+        </form>
+        <h3>
+            Aportes por a&nacute;os:
+        </h3>
+
+        <table>
+            <thead>
+                    <tr>
+                        <th {{ header.class_attrib }}>Año</th><th {{ header.class_attrib }}>Total-
+                        Anual</th><th {{ header.class_attrib }}>Enero</th><th {{ header.class_attrib }}>Febrero</th><th {{ header.class_attrib }}>Marzo</th><th {{ header.class_attrib }}>Abril</th><th {{ header.class_attrib }}>Mayo</th><th {{ header.class_attrib }}>Junio</th><th {{ header.class_attrib }}>Julio</th><th {{ header.class_attrib }}>Agosto</th><th {{ header.class_attrib }}>Septiembre</th><th {{ header.class_attrib }}>Octubre</th><th {{ header.class_attrib }}>Noviembre</th><th {{ header.class_attrib }}>Diciembre</th>
+                    </tr>
+            </thead>
+            <tbody>
+                {% for aporte in aportes %}
+
+                    <tr class="{% cycle 'row1' 'row2' %} {% if aporte.total == '$ 0.00' %}celdavacia{%endif%} ">
+                        <td class="celdavaloranio"  >{{ aporte.anio_id }}</td><td class="celdavalortotal" >{{aporte.total}}</td><td class="celdavalor" >$ {{aporte.ene|floatformat:2}}</td><td class="celdavalor" >$ {{aporte.feb|floatformat:2}}</td><td class="celdavalor" >$ {{aporte.mar|floatformat:2}}</td><td class="celdavalor" >$ {{aporte.abr|floatformat:2}}</td><td class="celdavalor" >$ {{aporte.may|floatformat:2}}</td><td class="celdavalor" >$ {{aporte.jun|floatformat:2}}</td><td class="celdavalor" >$ {{aporte.jul|floatformat:2}}</td><td class="celdavalor" >$ {{aporte.ago|floatformat:2}}</td><td class="celdavalor" >$ {{aporte.sep|floatformat:2}}</td><td class="celdavalor" >$ {{aporte.oct|floatformat:2}}</td><td class="celdavalor" >$ {{aporte.nov|floatformat:2}}</td><td class="celdavalor" >$ {{aporte.dic|floatformat:2}}</td>
+                    </tr>
+
+                {% endfor %}
+            </tbody>
+
+        </table>
+
+
+    </div>
+</div>
+{% endblock %}

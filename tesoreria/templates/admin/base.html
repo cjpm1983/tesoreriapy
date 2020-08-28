@@ -4,9 +4,12 @@
 <head>
 <title>{% block title %}{% endblock %}</title>
 <link rel="stylesheet" type="text/css" href="{% block stylesheet %}{% static 'admin/css/base.css' %}{% endblock %}">
-
+{% load static %}
 {% block extrastyle %}
     <link href="{% static 'assets/js/plugins/nucleo/css/nucleo.css' %}" rel="stylesheet">
+    <!--link href="{ static 'assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css' }" rel="stylesheet"-->
+    <link href="{% static 'admin/fonts/fontaw/css/all.min.css' %}" rel="stylesheet">
+
     {% endblock %}
 
 {% if LANGUAGE_BIDI %}<link rel="stylesheet" type="text/css" href="{% block stylesheet_rtl %}{% static "admin/css/rtl.css" %}{% endblock %}">{% endif %}
@@ -40,7 +43,7 @@
             {% endblock %}
             {% block userlinks %}
             <a href="/admin"><i class="ni ni-folder-17">&nbsp;</i>Administración</a> /
-            <a href="{{ site_url }}"><i class="ni ni-chart-bar-32">&nbsp;</i>Estadísticas</a> /
+            <a href="{% url 'admin:estadistica' %}"><i class="ni ni-chart-bar-32">&nbsp;</i>Estadísticas</a> /
                 {% if user.is_active and user.is_staff %}
                     {% url 'django-admindocs-docroot' as docsroot %}
                     {% if docsroot %}
@@ -93,4 +96,5 @@
 <!-- END Container -->
 
 </body>
+<script src="{% static 'assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css' %}"></script>
 </html>

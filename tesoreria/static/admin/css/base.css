@@ -4,6 +4,30 @@
 
 @import url(fonts.css);
 
+/*mis estilos*/
+.contenido{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.menuop {
+    background: #5fa55c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*tr.model-iglesias > th:before {
+    font-family: "Font Awesome 5";
+    font-weight: 500;
+    content: "\f4ee";
+    content:"\f494";
+    content:"\f369";
+}*/
+
 .logobn{
 width:48px;}
 
@@ -524,7 +548,7 @@ input[type=button][disabled].default {
     font-size: 13px;
     text-align: left;
     /*background: #79aec8;*/
-    background: linear-gradient(87deg, #999999 0, #adafc3 100%) !important;
+    background: #847196 !important;
     color: #fff;
 }
 

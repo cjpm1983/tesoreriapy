@@ -11,6 +11,48 @@
 {% block usertools %}{{ block.super }}{% endblock %}
 {% block content %}
 <div id="content-main">
+    <div class="contenido">
+        <ul class="messagelist">
+            <li class="success">
+                {% if not tipo %}Seleccione el tipo de consulta por obrero o por iglesia{% else %}Seleccione {{tipo}} a consultar{% endif %}
+            </li>
+        </ul>
 
+        {% if not tipo %}
+        <form action="" method="post">
+            {% csrf_token %}
+            <select name="tipo" id="tipo" onchange="">
+                <option value="obrero">Consulta por Obrero</option>
+                <option value="iglesia">Consulta por Iglesia</option>
+            </select>
+            <input type="submit" value="enviar">
+        </form>
+        {% else %}
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <select name="tipo" id="tipo" onchange="">
+                        <option value="obrero" {% if tipo == 'obrero' %}selected{% endif %}>Consulta por Obrero</option>
+                        <option value="iglesia" {% if tipo == 'iglesia' %}selected{% endif %}>Consulta por Iglesia</option>
+                    </select>
+                    &nbsp;&nbsp;
+                    <select name="item" id="item" onchange="">
+                        {% for item in items %}
+                            <option value="{{item.id}}"  >
+                                {% if tipo == 'obrero' %}
+                                    {{item.nombre}}
+                                {% else %}
+                                    {{item.iglesia}}
+                                {% endif %}
+                            </option>
+                        {% endfor %}
+                        <option value="obrero">Consulta por Obrero</option>
+                        <option value="iglesia">Consulta por Iglesia</option>
+                    </select>
+
+                    <input type="submit" value="enviar">
+                </form>
+        {% endif %}
+
+    </div>
 </div>
 {% endblock %}
