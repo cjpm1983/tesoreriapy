@@ -1,0 +1,44 @@
+/*
+
+@font-face {
+    font-family: 'Font Awesome 5';
+    src: url('../fonts/fontaw/fa-brands-400.woff');
+    font-style: brands;
+    font-weight: 400;
+
+}
+@font-face {
+    font-family: 'Font Awesome 5';
+    src: url('../fonts/fontaw/fa-regular-400.woff');
+    font-style: regular;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Font Awesome 5';
+    src: url('../fonts/fontaw/fa-solid-900.woff');
+    font-style: solid;
+    font-weight: 900;
+}
+*/
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold-webfont.woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular-webfont.woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light-webfont.woff');
+    font-weight: 300;
+    font-style: normal;
+}
